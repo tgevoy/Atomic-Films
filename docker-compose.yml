@@ -1,0 +1,15 @@
+version: "3"
+services:
+  node:
+    container_name: node
+    build: ./node   # Tells Docker Compose where to find the Dockerfile to build the image
+    image: atomic-films # Tells Docker Compose what to name the image
+    user: "node"
+    working_dir: /home/node/app
+    environment:
+      - NODE_ENV=development # "development will be changed to "production" once app is published or performance suffers.
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/home/node/app
+    command: "npm start"
