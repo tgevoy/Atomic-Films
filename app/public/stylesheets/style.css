@@ -1,10 +1,5 @@
-body {
-  padding: 50px;
-  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
-  color: white;
-  background: #078ff4;
-}
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
 
-a {
-  color: #00B7FF;
+h1 {
+    font-family: 'Luckiest Guy', sans-serif;
 }
