@@ -1,7 +1,7 @@
 "use strict";
 
 const about = function(req, res) {
-    res.render("about", { tite: "About Atomic Films"});
+    res.render("about", { title: "About Atomic Films"});
 };
 
 module.exports = {
