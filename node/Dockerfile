@@ -5,3 +5,6 @@
 FROM node:6
 
 LABEL maintainer="Tim Evoy <tievo17@gmail.com>"
+
+# Installs nodemon module as a global package, instead of being a dependency in project, because this is a mandantory tool used for development.
+RUN npm install -g nodemon

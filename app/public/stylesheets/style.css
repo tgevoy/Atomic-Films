@@ -1,5 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Chathura|Emblema+One|Fascinate+Inline|Jura|Megrim|Ultra");
 
-h1 {
-    font-family: 'Luckiest Guy', sans-serif;
+a.navbar-brand {
+  font-family: 'Megrim', sans-serif;
+  font-size: 3rem;
+  color: #a76804;
+}
+
+ul li a {
+  font-family: 'Jura', sans-serif;
+  font-size: 1.5rem;  
+}
+
+body {
+  padding-bottom: 40px;
+}
+
+footer {
+  font-family: 'Megrim', sans-serif;
 }
