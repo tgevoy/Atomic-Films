@@ -4,7 +4,8 @@ block content
   br
   br
   .container
-    h2.text-left Currently Playing
+    h2.text-left
+      | Currently Playing
   #movieCarousel.carousel.slide.bg-inverse.w-50.ml-auto.mr-auto(data-ride="carousel")
     ol.carousel-indicators
       li.active(data-target="#movieCarousel", data-slide-to="0")
@@ -20,11 +21,11 @@ block content
     a.carousel-control-prev(href='#movieCarousel', role='button', data-slide='prev')
       span.carousel-control-prev-icon(aria-hidden='true')
       span.sr-only
-      | Previous
+        | Previous
     a.carousel-control-next(href='#movieCarousel', role='button', data-slide='next')
       span.carousel-control-next-icon(aria-hidden='true')
       span.sr-only
-      | Next
+        | Next
   
   br
   br
