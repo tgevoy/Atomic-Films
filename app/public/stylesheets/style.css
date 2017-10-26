@@ -1,9 +1,11 @@
 @import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Megrim|Passion+One");
 
+
 /* Body section */
 body {
   padding-bottom: 40px;
 }
+
 
 /* Atomic-Films brand section */
 a.atomicFilms-brand {
@@ -11,6 +13,7 @@ a.atomicFilms-brand {
   font-size: 3rem;
   color: #a76804;
 }
+
 
 /* Navbar section */
 nav.navbar {
