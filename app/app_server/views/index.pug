@@ -1,8 +1,36 @@
 extends layout
 
 block content
-
-  p
-  | Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
-
+  br
+  br
+  .container
+    h2.text-left Currently Playing
+  #movieCarousel.carousel.slide.bg-inverse.w-50.ml-auto.mr-auto(data-ride='carousel')
+    ol.carousel-indicators
+      li.active(data-target='#movieCarousel', data-slide-to='0')
+      li(data-target='#movieCarousel', data-slide-to='1')
+      li(data-target='#movieCarousel', data-slide-to='2')
+    .carousel-inner(role='listbox')
+      .carousel-item.active
+        img.d-block.w-100(src='#' alt='first slide')
+      .carousel-item
+        img.d-block.w-100(src='#' alt='second slide')
+      .carousel-item
+        img.d-block.w-100(src='#' alt='third slide')
+    a.carousel-control-prev(href='#movieCarousel', role='button', data-slide='prev')
+      span.carousel-control-prev-icon(aria-hidden='true')
+      span.sr-only
+      | Previous
+    a.carousel-control-next(href='#movieCarousel', role='button', data-slide='next')
+      span.carousel-control-next-icon(aria-hidden='true')
+      span.sr-only
+      | Next
+  
+  br
+  br
+  footer.container-fluid.text-center
+    form.form-inline
+      | Get deals:
+      input.form-control(type="email", size="50", placeholder="Email Address")
+      button.btn.btn-primary(type="button") Sign Up
 

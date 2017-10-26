@@ -9,24 +9,27 @@ html
     link(rel="stylesheet", href="/stylesheets/style.css")
     
   body
-    a.navbar-brand(href="/")
-      .brand-text.float-left Atomic Films
+    //- Atomic Films brand
+    a.atomicFilms-brand(href="/")
+      .atomicFilms-brand-text.float-left Atomic Films
       //- Movie Projector icon credit and creation by Icons8 => https://icons8.com/icon/set/movie/all
       img(src="https://png.icons8.com/movie-projector/color/48", title="Movie Projector", width="48", height="48")
-    //- Start of Navbar
-    nav.navbar.navbar-expand-md.bg-info.navbar-light
+    // end Atomic-Films brand
+    
+    //- navbar
+    nav.navbar.navbar-expand-md.navbar-light.bg-darkcyan
       .container  
         button.navbar-toggler(type="button", data-toggle="collapse", data-target="#mainNavbar")
           span.navbar-toggler-icon
         .collapse.navbar-collapse#mainNavbar
-          ul.navbar-nav.justify-content-center
+          ul.nav.ml-auto
             li.nav-item
-              a.nav-link.text-dark(href="/movies") Movies & Info
+              a.nav-link(href="/movies") Movies & Details
             li.nav-item
-              a.nav-link.text-dark(href="/movies/reserve") Reserve
+              a.nav-link(href="/movies/reserve") Reserve
             li.nav-item
-              a.nav-link.text-dark(href="/about") Contact
-    //- End of Navbar
+              a.nav-link(href="/about") Contact
+    //- End Navbar
      
   
   
@@ -38,9 +41,8 @@ html
       script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")
       script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous")
       script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous")
-
-      footer.fixed-bottom.bg-info.text-center
-        .container
-          .af-footer-text &copy;2017 Atomic Films
-    
+      
+        footer.container.bg-dark
+          p
+          | &copy;2017 Atomic Films
     

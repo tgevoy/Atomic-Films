@@ -1,20 +1,49 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Chathura|Emblema+One|Fascinate+Inline|Jura|Megrim|Ultra");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Megrim|Passion+One");
 
-a.navbar-brand {
+/* Body section */
+body {
+  padding-bottom: 40px;
+}
+
+/* Atomic-Films brand section */
+a.atomicFilms-brand {
   font-family: 'Megrim', sans-serif;
   font-size: 3rem;
   color: #a76804;
 }
 
-ul li a {
-  font-family: 'Jura', sans-serif;
-  font-size: 1.5rem;  
+/* Navbar section */
+nav.navbar {
+  color: #eae00a;
+  background-color: darkcyan;
 }
 
-body {
-  padding-bottom: 40px;
+#mainNavbar li.nav-item a {
+  color: #d3b928;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 1.5rem;
 }
 
+#mainNavbar li.nav-item a:hover {
+  color: #e5e1ca;
+}
+
+#mainNavbar li.nav-item a:active {
+  color: #e86404;
+}
+
+li {
+  display: inline-block;
+}
+
+
+/* Footer section */
 footer {
-  font-family: 'Megrim', sans-serif;
+  font-family: 'Passion One', sans-serif;
+  color: #a76804;
+}
+
+footer form.form-inline {
+  font-family: 'Jura', sans-serif;
+  color: black;
 }
