@@ -6,6 +6,13 @@ body {
   padding-bottom: 40px;
 }
 
+/*
+img.responsive {
+  background-image: url("atomic-films/app/public/images/fullTheatre.jpg");
+  width: 100%px;
+  height: auto;
+}
+*/
 
 /* Atomic-Films brand section */
 a.atomicFilms-brand {
