@@ -1,7 +1,7 @@
 "use strict";
 
-const moviesList = function(req, res) {
-    res.render("index", { title: "Atomic Films" });
+const movieList = function(req, res) {
+    res.render("movie-list", { title: "Atomic Films" });
 };
 
 const movieDetails = function(req, res) {
@@ -13,7 +13,7 @@ const reserveMovie = function(req, res) {
 };
 
 module.exports = {
-    moviesList,
+    movieList,
     movieDetails,
     reserveMovie
 };

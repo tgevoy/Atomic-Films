@@ -7,7 +7,7 @@ const othersController = require("../controllers/others");
 
 /* -- Movie Pages -- */
 /* GET home page. */
-router.get("/", moviesController.moviesList);
+router.get("/", moviesController.movieList);
 /* GET the movie details page */
 router.get("/movies", moviesController.movieDetails);
 /* GET the movie reserveration page */

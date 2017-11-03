@@ -3,16 +3,9 @@
 
 /* Body section */
 body {
+  padding-top: 5px;
   padding-bottom: 40px;
 }
-
-/*
-img.responsive {
-  background-image: url("atomic-films/app/public/images/fullTheatre.jpg");
-  width: 100%px;
-  height: auto;
-}
-*/
 
 /* Atomic-Films brand section */
 a.atomicFilms-brand {
@@ -21,16 +14,24 @@ a.atomicFilms-brand {
   color: #a76804;
 }
 
+#afBrandMotto {
+  background-color: #000000;
+}
+
+p.af-header-font {
+  color: white;
+  font-family: cursive;
+}
 
 /* Navbar section */
 nav.navbar {
   color: #eae00a;
-  background-color: darkcyan;
+  background-color: #282a14;
 }
 
 #mainNavbar li.nav-item a {
-  color: #d3b928;
-  font-family: 'Catamaran', sans-serif;
+  color: #4c9a9a;
+  font-family: 'Jura', sans-serif;
   font-size: 1.5rem;
 }
 
@@ -48,12 +49,17 @@ li {
 
 
 /* Footer section */
+
 footer {
+  background-color: #000000;
+}
+
+.af-footer-text {
   font-family: 'Passion One', sans-serif;
-  color: #a76804;
+  color: #4c9a9a;
 }
 
 footer form.form-inline {
   font-family: 'Jura', sans-serif;
-  color: black;
+  color: #4c9a9a;
 }
