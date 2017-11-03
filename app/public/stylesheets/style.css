@@ -1,17 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Megrim|Passion+One");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Just+Another+Hand|Megrim|Open+Sans+Condensed:300|Passion+One");
 
 
 /* Body section */
 body {
-  padding-top: 5px;
-  padding-bottom: 40px;
+  padding-top: 1px;
+  /*padding-bottom: 40px;*/
 }
 
 /* Atomic-Films brand section */
 a.atomicFilms-brand {
   font-family: 'Megrim', sans-serif;
-  font-size: 3rem;
-  color: #a76804;
+  font-size: 3.5rem;
+  font-weight: bolder;
+  color: #bf7d00;
 }
 
 #afBrandMotto {
@@ -19,14 +20,15 @@ a.atomicFilms-brand {
 }
 
 p.af-header-font {
-  color: white;
-  font-family: cursive;
+  color: #dba133;
+  font-family: 'Open Sans Condensed', cursive;
+  font-size: 25px;
+  margin-left: 250px;
 }
 
 /* Navbar section */
 nav.navbar {
-  color: #eae00a;
-  background-color: #282a14;
+  background-color: #000000;
 }
 
 #mainNavbar li.nav-item a {
