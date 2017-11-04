@@ -2,58 +2,110 @@ extends layout
 
 block content
   br
-  br
-  h2= title
-  p
-  | Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
-  br
-  br
-  br
-  section.jumbotron.text-center
+  section.jumbotron.text-center.bg-info.text-black
     .container
-      h1.jumbotron-heading Movie Synopsis
-      p.lead.text-muted
-        | Find important information about Atomic Films' feature films below. Read up on the synopsis for each movie to see what they're about and which stars grace the stage. 
-     
-  .album.text-muted
+      h1.jumbotron-heading Movie Synopsis & Details
+      p.lead.text-white
+        | All movies will have a synopsis, schedule for show times, and list of actors/actresses starring in it.
+    br
+    br
+    //- Add ".movie" above the .container below to get rid of coloured background.
     .container
       .row
         .card
-          img(src="./images/moviePoster1.jpg", style="width:25%" alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center Viva Las Vegas (1964)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster1.jpg", style="width:25%" alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | All musically gifted racecar-driver Lucky Jackson (Elvis Presley) wants in Las Vegas is to score enough money for a new car motor, so he can win the Grand Prix. When he encounters sexy swimming instructor Rusty Martin (Ann-Margret), he considers staying around longer. After Lucky loses his winnings in the hotel pool, he's forced to remain in Vegas long enough to win back his dough -- but now he also wants to win Rusty's heart. Unfortunately, so does his slick racing enemy, Elmo Mancini (Cesare Danova).
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster2.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center Paradise Canyon (1935)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster2.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | John Wyatt (John Wayne) is a government agent sent to smash a counterfeiting operation near the USA/Mexican border. Joining Doc Carter's (Earle Hodgins) medicine show, they arrive in the town where Curly Joe (Yakima Canutt), who once framed Carter, resides. Learning that Curly Joe is the counterfeiter, Wyatt goes after the man himself.
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster3.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center Guys And Dolls (1955)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster3.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | Gambler Nathan Detroit (Frank Sinatra) has few options for the location of his big craps game. Needing $1,000 to pay a garage owner to host the game, Nathan bets Sky Masterson (Marlon Brando) that Sky cannot get virtuous Sarah Brown (Jean Simmons) out on a date. Despite some resistance, Sky negotiates a date with her in exchange for bringing people into her mission. Meanwhile, Nathan's longtime fiancée, Adelaide (Vivian Blaine), wants him to go legit and marry her.
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster4.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center The Thing (1951)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster4.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | When scientist Dr. Carrington (Robert Cornthwaite) reports a UFO near his North Pole research base, the Air Force sends in a team under Capt. Patrick Hendry (Kenneth Tobey) to investigate. What they find is a wrecked spaceship and a humanoid creature (James Arness) frozen in the ice. They bring their discovery back to the base, but Carrington and Hendry disagree over what to do with it. Meanwhile, the creature is accidentally thawed and begins wreaking havoc.
+      
+      br
+      br
+      .row
+        .card.mx-auto
+          br
+          h4.card-title.text-danger.text-center Hot-Rod Girl (1956)
+          img.img-resonsive.mx-auto.d-block(src="./images/moviePoster5.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | Lisa (Lori Nelson) is worried about her fiancé Jeff (John Smith) after the death of his brother in illegal street racing. Flat Top (Frank Gorshin) and the other hot rodders, who hang out at Yo-Yo’s (Fred Essler) burger joint, only went to the police sponsored dragstrip, because of Jeff urging them, but now he does not want anything to do with it. It is only a matter of time, before Police Detective Ben Merrill (Chuck Connors) has another accident, to clean up, when Bronc Talbot (Mark Andrews) rolls into town and goads them into playing chicken.
+            
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster5.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center Dragstrip Riot (1958)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster6.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | In a beach community near Malibu, California, teenager Rick Martin promises his mother he won't get into any more fights — especially like the one that put him in jail a few months back. But when a motorcycle gang begins harassing his drag-racing pals, all hell breaks loose. One of the cyclists is sent hurtling over a cliff, after which Rick gets the blame.
+            
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster6.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center La Dolce Vita (1960)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster7.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | In Federico Fellini's lauded Italian film, restless reporter Marcello Rubini (Marcello Mastroianni) drifts through life in Rome. While Marcello contends with the overdose taken by his girlfriend, Emma (Yvonne Furneaux), he also pursues heiress Maddalena (Anouk Aimée) and movie star Sylvia (Anita Ekberg), embracing a carefree approach to living. Despite his hedonistic attitude, Marcello does have moments of quiet reflection, resulting in an intriguing cinematic character study.
+            
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster7.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center Vertigo (1958)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster8.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | Hitchcock's romantic story of obsession, manipulation and fear. A detective is forced to retire after his fear of heights causes the death of a fellow officer and the girl he was hired to follow. He sees a double of the girl, causing him to transform her image onto the dead girl's body. This leads into a cycle of madness and lies.
+            
+      br
+      br
+      .row
         .card
-          img(src="./images/moviePoster8.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
-        .card
-          img(src="./images/moviePoster9.jpg", style="width:25%", alt='Card image cap')
-          p.card-text
-            | This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+          br
+          h4.card-title.text-danger.text-center Ocean's Eleven (1960)
+          img.img-responsive.mx-auto.d-block(src="./images/moviePoster9.jpg", style="width:25%", alt='Card image cap')
+          br
+          p.card-text.text-justify
+            | Danny Ocean (Frank Sinatra) calls on some of his World War II buddies -- including Jimmy Foster (Peter Lawford), Sam Harmon (Dean Martin) and Josh Howard (Sammy Davis Jr.) -- to pull off an elaborate New Year's Eve heist at five casinos in Las Vegas. Eleven members of Danny's crew come together to pull off a perfect robbery, but they suffer a series of setbacks when Duke Santos (Cesar Romero), a former gangster, tries to thwart Ocean's plans to disappear with the money.
+ 
+        
 
 
 //-
@@ -124,6 +176,4 @@ block content
             .panel-body
               img.img-responsive(src="./images/moviePoster9.jpg", style='width:100%', alt="Movie Poster #9")
             .panel-footer Daily Show Times: 12:00pm, 3:30pm, 7:00pm
-  br
-  br
-  
+ 

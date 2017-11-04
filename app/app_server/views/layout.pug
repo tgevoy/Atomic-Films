@@ -16,7 +16,7 @@ html
           //- Movie Projector icon credit and creation by Icons8 => https://icons8.com/icon/set/movie/all
           //img(src="https://png.icons8.com/movie-projector/color/48", title="Movie Projector", width="48", height="48")
       .row.py-3
-        p.lead.pl-4.af-header-font ...Let the classics entertain you!
+        p.af-header-font ...Enjoy the classics of yesterday!
     //- Navbar Nav Items
     nav.navbar.navbar-expand-md.navbar-dark
       .container  
@@ -25,11 +25,11 @@ html
         .collapse.navbar-collapse#mainNavbar
           ul.nav.ml-auto
             li.nav-item
-              a.nav-link(href="/movies") Details
+              a.nav-link(href="/movies") Synopsis
             li.nav-item
               a.nav-link(href="/movies/reserve") Reserve
             li.nav-item
-              a.nav-link(href="/about") Contact Us
+              a.nav-link(href="/about") Contact
     //- End Navbar
      
     .container-fluid
@@ -42,7 +42,7 @@ html
       br
       br
       //- Footer Section
-      footer
-        .row
-          a(href="/")
-            p &copy;2017 Atomic Films
+      footer.fixed-bottom.text-right
+        .container
+          p.af-footer-text 2017 &copy; 
+            a(href="/") Atomic Films

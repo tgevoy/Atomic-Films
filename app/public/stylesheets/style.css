@@ -1,10 +1,10 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Just+Another+Hand|Megrim|Open+Sans+Condensed:300|Passion+One");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Just+Another+Hand|Megrim|Open+Sans+Condensed:300|Overlock+SC|Passion+One");
 
 
 /* Body section */
 body {
   padding-top: 1px;
-  /*padding-bottom: 40px;*/
+  padding-bottom: 40px;*/
 }
 
 /* Atomic-Films brand section */
@@ -21,9 +21,9 @@ a.atomicFilms-brand {
 
 p.af-header-font {
   color: #dba133;
-  font-family: 'Open Sans Condensed', cursive;
-  font-size: 25px;
-  margin-left: 250px;
+  font-family: 'Catamaran', sans-serif;
+  font-size: 18px;
+  margin-left: 20rem;
 }
 
 /* Navbar section */
@@ -33,8 +33,10 @@ nav.navbar {
 
 #mainNavbar li.nav-item a {
   color: #4c9a9a;
-  font-family: 'Jura', sans-serif;
+  font-family: 'Bungee Hairline', sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
+  
 }
 
 #mainNavbar li.nav-item a:hover {
@@ -49,6 +51,9 @@ li {
   display: inline-block;
 }
 
+/* Movie Details Page */
+
+
 
 /* Footer section */
 
@@ -56,12 +61,18 @@ footer {
   background-color: #000000;
 }
 
-.af-footer-text {
-  font-family: 'Passion One', sans-serif;
+footer a {
+  color: #bf7d00;
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+p.af-footer-text {
+  font-family: 'Bungee Hairline', sans-serif;
   color: #4c9a9a;
 }
 
-footer form.form-inline {
-  font-family: 'Jura', sans-serif;
-  color: #4c9a9a;
-}
+
