@@ -1,11 +1,11 @@
 "use strict";
 
-const about = function(req, res) {
-    res.render("about", { title: "About Atomic Films"});
+const contact = function(req, res) {
+    res.render("contact", { title: "Contact Atomic Films"});
 };
 
 module.exports = {
-    about
+    contact
 };
 
 /* Deleted for Lab 6 Task 4 Part 3

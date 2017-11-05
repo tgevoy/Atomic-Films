@@ -15,7 +15,7 @@ router.get("/movies/reserve", moviesController.reserveMovie);
 
 /* -- Other Pages -- */
 /* GET contact page */
-router.get("/about", othersController.about);
+router.get("/contact", othersController.contact);
 
 module.exports = router;
 
