@@ -1,15 +1,9 @@
 extends layout
 
 block content
-  br
-  br
-  h2= title
-  
-  br
-  br
   .card
     .card-body.bg-dark
-      h5.card-title.pb-5.text-white.text-center Thanks for your interest in Atomic Films, please fill out this form and we will get back to you as soon as possible.
+      h5.card-title-text.pb-5.text-justify Thanks for your interest in Atomic Films. Send us a message by filling out the form below and we'll be happy to answer any questions you may have as soon as possible.
       //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
       form(name="contact", action="/thanks", method="post") 
         .form-group.row
@@ -27,6 +21,6 @@ block content
         .form-group.row
           label.col-form-label.col-sm-2
             .col-sm-6
-              button.btn.btn-primary(type="submit") Send Message
+              button.btn.btn-info(type="submit") Send Message
   br
   br
