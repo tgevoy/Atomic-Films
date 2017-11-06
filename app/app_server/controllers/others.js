@@ -5,7 +5,7 @@ const contact = function(req, res) {
 };
 
 const cart = function(req, res) {
-    res.render("cart", { title: "Shopping Cart"});
+    res.render("cart", { title: "Cart Contents"});
 };
 
 module.exports = {
