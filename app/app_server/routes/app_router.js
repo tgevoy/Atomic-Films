@@ -16,7 +16,7 @@ router.get("/movies/reserve", moviesController.reserveMovie);
 /* -- Other Pages -- */
 /* GET contact page */
 router.get("/contact", othersController.contact);
-router.get("/cart", othersController.cart);
+
 
 module.exports = router;
 
