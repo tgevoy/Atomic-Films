@@ -1,26 +1,30 @@
 extends layout
 
 block content
-  .card
-    .card-body.bg-dark
-      h5.card-title-text.pb-5.text-justify Thanks for your interest in Atomic Films. Send us a message by filling out the form below and we'll be happy to answer any questions you may have as soon as possible.
-      //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
-      form(name="contact", action="/thanks", method="post") 
-        .form-group.row
-          label.col-form-label.col-sm-2.text-white(for="email") Email:
-          .col-sm-6
-            input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
-        .form-group.row
-          label.col-form-label.col-sm-2.text-white(for="name") Name:
-          .col-sm-6
-            input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
-        .form-group.row
-          label.col-form-label.col-sm-2.text-white(for="message") Message:
-          .col-sm-10
-            textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
-        .form-group.row
-          label.col-form-label.col-sm-2
+  section.jumbotron.text-center.bg-dark
+    .container
+      h1.jumbotron-heading-text Contact Atomic Films
+    br
+    .card
+      .card-body.bg-dark
+        h5.card-title-text.pb-5.text-justify Thanks for your interest in Atomic Films. Send us a message by filling out the form below and we'll be happy to answer any questions you may have as soon as possible.
+        //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
+        form(name="contact", action="/thanks", method="post") 
+          .form-group.row
+            label.col-form-label.col-sm-2.text-white(for="email") Email:
             .col-sm-6
-              button.btn.btn-info(type="submit") Send Message
-  br
-  br
+              input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
+          .form-group.row
+            label.col-form-label.col-sm-2.text-white(for="name") Name:
+            .col-sm-6
+              input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
+          .form-group.row
+            label.col-form-label.col-sm-2.text-white(for="message") Message:
+            .col-sm-10
+              textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
+          .form-group.row
+            label.col-form-label.col-sm-2
+              .col-sm-6
+                button.btn.btn-info(type="submit") Send Message
+    br
+    br

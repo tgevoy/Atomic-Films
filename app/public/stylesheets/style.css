@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Bungee+Hairline|Bungee+Outline|Carter+One|Catamaran|Chathura|Exo|Jura|Just+Another+Hand|Megrim|Open+Sans+Condensed:300|Overlock+SC|Passion+One|PT+Sans+Narrow|Teko");
+@import url("https://fonts.googleapis.com/css?family=Anton|Bungee+Hairline|Bungee+Outline|Exo|Megrim|Teko");
 
 
 /* Body section (ALL PAGES) */
@@ -9,7 +9,7 @@ body {
 }
 
 /* Atomic-Films brand section (ALL PAGES) */
-a.atomicFilms-brand {
+.atomicFilms-brand-text {
   font-family: 'Megrim', sans-serif;
   font-size: 3.5rem;
   font-weight: bolder;
@@ -75,9 +75,6 @@ p.card-text {
 
 
 /* Contact Page (CONTACT) */
-form-text {
-  font: 'PT Sans Narrow', sans-serif;
-}
 
 h5.card-title-text {
   color: #bf7d00;
