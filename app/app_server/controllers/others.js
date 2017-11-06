@@ -1,16 +1,16 @@
 "use strict";
 
 const contact = function(req, res) {
-  res.render("contact", { title: "Contact Atomic Films"});
+    res.render("contact", { title: "Contact Atomic Films"});
 };
 
 const cart = function(req, res) {
-  res.cart("cart", { title: "Checkout Cart"});
+    res.render("cart", { title: "Cart Contents"});
 };
 
 module.exports = {
-  contact
-  cart
+    contact
+    cart
 };
 
 /* Deleted for Lab 6 Task 4 Part 3
