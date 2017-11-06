@@ -1,8 +1,32 @@
 extends layout
 
 block content
+  br
+  br
   h2= title
   
-  p
-  | Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae, eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus sit amet fermentum.
-
+  br
+  br
+  .card
+    .card-body.bg-dark
+      h5.card-title.pb-5.text-white.text-center Thanks for your interest in Atomic Films, please fill out this form and we will get back to you as soon as possible.
+      //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
+      form(name="contact", action="/thanks", method="post") 
+        .form-group.row
+          label.col-form-label.col-sm-2.text-white(for="email") Email:
+          .col-sm-6
+            input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
+        .form-group.row
+          label.col-form-label.col-sm-2.text-white(for="name") Name:
+          .col-sm-6
+            input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
+        .form-group.row
+          label.col-form-label.col-sm-2.text-white(for="message") Message:
+          .col-sm-10
+            textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
+        .form-group.row
+          label.col-form-label.col-sm-2
+            .col-sm-6
+              button.btn.btn-primary(type="submit") Send Message
+  br
+  br

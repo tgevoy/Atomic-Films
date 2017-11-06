@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Carter+One|Catamaran|Chathura|Jura|Just+Another+Hand|Megrim|Open+Sans+Condensed:300|Overlock+SC|Passion+One");
+@import url("https://fonts.googleapis.com/css?family=Bungee+Hairline|Bungee+Outline|Carter+One|Catamaran|Chathura|Exo|Jura|Just+Another+Hand|Megrim|Monofett|Open+Sans+Condensed:300|Overlock+SC|Passion+One|PT+Sans+Narrow");
 
 
 /* Body section */
@@ -21,9 +21,8 @@ a.atomicFilms-brand {
 
 p.af-header-font {
   color: #dba133;
-  font-family: 'Catamaran', sans-serif;
+  font-family: 'Exo', sans-serif;
   font-size: 18px;
-  margin-left: 20rem;
 }
 
 /* Navbar section */
@@ -52,8 +51,13 @@ li {
 }
 
 /* Movie Details Page */
-
-
+.card-title {
+  font: 'Monofett', sans-serif;
+}
+/* Contact Page */
+label {
+  font: 'PT Sans Narrow', sans-serif;
+}
 
 /* Footer section */
 
