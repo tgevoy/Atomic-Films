@@ -1,7 +1,7 @@
 "use strict";
 
 const contact = function(req, res) {
-    res.render("contact", { title: "Contact Atomic Films"});
+    res.render("contact", { title: "Have a question? Contact Atomic Films"});
 };
 
 module.exports = {
