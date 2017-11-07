@@ -3,9 +3,8 @@ extends layout
 block content
   section.jumbotron.text-center.bg-dark
     .container
-      h1.jumbotron-heading-text Reserve A Film
-      p.lead.text-white
-        | Beat the line-ups and reserve a ticket and seat ahead of time. Combine your admission with concession snacks for a truly classic entertainment night.
+      h1.jumbotron-heading-text= pageHeader.title
+      p.lead.text-white= pageHeader.tagline
     .card
       .card-body.bg-dark
         h4.card-title-text.pb-5.text-justify Nice choice! You've selected a great classic film to enjoy!

@@ -3,9 +3,8 @@ extends layout
 block content
   section.jumbotron.text-center.bg-dark
     .container
-      h1.jumbotron-heading-text Film Synopsis & Details
-      p.lead.text-white
-        | All movies will have a synopsis, schedule for show times, and list of actors/actresses starring in it.
+      h1.jumbotron-heading-text= pageHeader.title
+      p.lead.text-white= pageHeader.tagline
     br
     br
     //- Add ".movie" above the .container below to get rid of coloured background.
