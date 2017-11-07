@@ -8,10 +8,10 @@ block content
         | Beat the line-ups and reserve a ticket and seat ahead of time. Combine your admission with concession snacks for a truly classic entertainment night.
     .card
       .card-body.bg-dark
-        h5.card-title-text.pb-5.text-justify Nice choice! You've selected a great classic film to enjoy!
+        h4.card-title-text.pb-5.text-justify Nice choice! You've selected a great classic film to enjoy!
         //- WILL NEED TO ADD A /CONFIRM PAGE TO CONTROLLER IN FUTURE!!!
-        form(name="reserve", action="/confirm", method="post") 
-          .form-group.row
+        form.text(name="reserve", action="/confirm", method="post") 
+          .form-group.row.text
             label.col-form-label.col-sm-2.text-white(for="movie") Movie:
             .col-sm-6
               input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
