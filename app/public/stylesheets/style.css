@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Bungee+Hairline|Bungee+Outline|Exo|Megrim|Teko");
+@import url("https://fonts.googleapis.com/css?family=Anton|Bungee+Hairline|Bungee+Outline|Exo|Megrim|Rajdhani|Quicksand|Teko");
 
 
 /* Body section (ALL PAGES) */
@@ -34,7 +34,7 @@ nav.navbar {
 #mainNavbar li.nav-item a {
   color: #4c9a9a;
   font-family: 'Bungee Hairline', sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: bold; 
 }
 
@@ -51,7 +51,7 @@ li {
 }
 
 
-/* Movie Page (MOVIE-LIST) */
+/* Movies Page (MOVIE-LIST) */
 h3.pl-3-text {
   color: #bf7d00;
 }
@@ -60,7 +60,7 @@ h3.pl-3-text {
 /* Synopsis Page (MOVIE-DETAILS) */
 h4.card-title-text {
   font-family: 'Teko', sans-serif;
-  font-size: 2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -73,10 +73,14 @@ p.card-text {
   font-family: 'Exo', sans-serif;
 }
 
+/* Reserve Page (RESERVE-MOVIE) */
+form.text {
+  font-family: 'Exo', sans-serif;
+}
+
 
 /* Contact Page (CONTACT) */
-
-h5.card-title-text {
+h4.card-title-text {
   color: #bf7d00;
   font-family: 'Exo', sans-serif;
 }
