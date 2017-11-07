@@ -9,23 +9,5 @@ block content
     .card
       .card-body.bg-dark
         h4.card-title-text.pb-5.text-justify Nice choice! You've selected a great classic film to enjoy!
-        //- WILL NEED TO ADD A /CONFIRM PAGE TO CONTROLLER IN FUTURE!!!
-        form.text(name="reserve", action="/confirm", method="post") 
-          .form-group.row.text
-            label.col-form-label.col-sm-2.text-white(for="movie") Movie:
-            .col-sm-6
-              input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
-          .form-group.row
-            label.col-form-label.col-sm-2.text-white(for="name") Name:
-            .col-sm-6
-              input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
-          .form-group.row
-            label.col-form-label.col-sm-2.text-white(for="message") Message:
-            .col-sm-10
-              textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
-          .form-group.row
-            label.col-form-label.col-sm-2
-              .col-sm-6
-                button.btn.btn-info(type="submit") Send Message
     br
     br
