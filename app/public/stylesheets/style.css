@@ -1,14 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Anton|Bungee+Hairline|Bungee+Outline|Exo|Megrim|Rajdhani|Quicksand|Teko");
 
 
-/* Body section (ALL PAGES) */
+/********************* Body section (ALL PAGES) ***********************/
 body {
   padding-top: 1px;
   padding-bottom: 40px;
   background-color: #000000;
 }
 
-/* Atomic-Films brand section (ALL PAGES) */
+
+/******************** Atomic-Films brand section (ALL PAGES) *********************/
 .atomicFilms-brand-text {
   font-family: 'Megrim', sans-serif;
   font-size: 3.5rem;
@@ -26,9 +27,10 @@ p.af-header-font {
   font-size: 18px;
 }
 
-/* Navbar section (ALL PAGES) */
+
+/******************** Navbar section (ALL PAGES) **********************/
 nav.navbar {
-  background-color: #000000;
+		background-color: #000000;
 }
 
 #mainNavbar li.nav-item a {
@@ -51,13 +53,15 @@ li {
 }
 
 
-/* Movies Page (MOVIE-LIST) */
-h3.pl-3-text {
-  color: #bf7d00;
+
+/***************** Movies Page (MOVIE-LIST) *****************/
+section.jumbotron {
+    background-color: #585656;
 }
 
 
-/* Synopsis Page (MOVIE-DETAILS) */
+
+/***************** Synopsis Page (MOVIE-DETAILS) ****************/
 h4.card-title-text {
   font-family: 'Teko', sans-serif;
   font-size: 1rem;
@@ -73,13 +77,17 @@ p.card-text {
   font-family: 'Exo', sans-serif;
 }
 
-/* Reserve Page (RESERVE-MOVIE) */
+
+
+/****************** Reserve Page (RESERVE-MOVIE) *******************/
 form.text {
   font-family: 'Exo', sans-serif;
 }
 
 
-/* Contact Page (CONTACT) */
+
+
+/****************** Contact Page (CONTACT) *******************/
 h4.card-title-text {
   color: #bf7d00;
   font-family: 'Exo', sans-serif;
@@ -90,7 +98,9 @@ button.btn:hover {
 }
 
 
-/* Footer section (ALL PAGES) */
+
+
+/************************ Footer section (ALL PAGES) **************************/
 footer {
   background-color: #000000;
 }

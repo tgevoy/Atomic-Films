@@ -3,11 +3,11 @@ extends layout
 block content
   section.jumbotron.text-center.bg-dark
     .container
-      h1.jumbotron-heading-text Contact Atomic Films
+      h1.jumbotron-heading-text= pageHeader.title
     br
     .card
       .card-body.bg-dark
-        h4.card-title-text.pb-5.text-justify Thanks for your interest in Atomic Films. Send us a message by filling out the form below and we'll be happy to answer any questions you may have as soon as possible.
+        h4.card-title-text.pb-5.text-justify= pageHeader.tagline
         //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
         form(name="contact", action="/thanks", method="post") 
           .form-group.row

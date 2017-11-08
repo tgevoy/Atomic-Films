@@ -2,92 +2,91 @@ extends layout
 
 block content
   //- Movie List Summary Section
-  section.jumbotron.text-center.bg-dark
+  section.jumbotron.text-center
     .container
-      h1.jumbotron-heading-text Feature Films
-      p.lead.text-white
-        | All movies will have a synopsis, schedule for show times, and list of actors/actresses starring in it.
+      h1.jumbotron-heading-text= pageHeader.title
+      p.lead.text-white= pageHeader.tagline
     br
     br
     .container
       .row
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster1.jpg", alt="movie poster 1", style="width:100%")
-            .caption
-              p.text-white Starring: Elvis Presley, Ann Margret, and Cesare Danova
+            img.img-responsive.w-100(src="./images/moviePoster1.jpg", alt="movie poster 1")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster2.jpg", alt="movie poster 2", style="width:100%")
-            .caption
-              p.text-white Starring: John Wayne, Earle Hodgins, and Yakima Canutt
+            img.img-responsive.w-100(src="./images/moviePoster2.jpg", alt="movie poster 2")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster3.jpg", alt="movie poster 3", style="width:100%")
-            .caption
-              p.text-white Starring: Marlon Brando, Jean Simmons, Frank Sinatra, and Vivian Blaine
+            img.img-responsive.w-100(src="./images/moviePoster3.jpg", alt="movie poster 3")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster4.jpg", alt="movie poster 4", style="width:100%")
-            .caption
-              p.text-white Starring: Robert Cornthwaite, Kenneth Tobey, and James Arness
+            img.img-responsive.w-100(src="./images/moviePoster4.jpg", alt="movie poster 4")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster5.jpg", alt="movie poster 5", style="width:100%")
-            .caption
-              p.text-white Starring: Lori Nelson, John Smith, Frank Gorshin, Fred Essler, and Chuck Connors
+            img.img-responsive.w-100(src="./images/moviePoster5.jpg", alt="movie poster 5")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster6.jpg", alt="movie poster 6", style="width:100%")
-            .caption
-              p.text-white Starring: Yvonne Lime, Gary Clarke, Fay Wray, Bob Turnbull, and Connie Stevens
+            img.img-responsive.w-100(src="./images/moviePoster6.jpg", alt="movie poster 6")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster7.jpg", alt="movie poster 7", style="width:100%")
-            .caption
-              p.text-white Starring: Marcello Mastroianni, Yvonne Furneaux, Anouk Aimee, and Anita Ekberg
+            img.img-responsive.w-100(src="./images/moviePoster7.jpg", alt="movie poster 7")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster8.jpg", alt="movie poster 8", style="width:100%")
-            .caption
-              p.text-white Starring: James Stewart and Kim Novak
+            img.img-responsive.w-100(src="./images/moviePoster8.jpg", alt="movie poster 8")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
           br
           br
         .col-6.col-md-4
           .thumbnail
-            img.img-responsive(src="./images/moviePoster9.jpg", alt="movie poster 9", style="width:100%")
-            .caption
-              p.text-white Starring: Frank Sinatra, Dean Martin, Sammy Davis JR, Peter Lawford, and Angie Dickinson
+            img.img-responsive.w-100(src="./images/moviePoster9.jpg", alt="movie poster 9")
+            br
+            br
             a.btn-link(href="/movies")
               button.btn.btn-warning(type="button") Info
               
