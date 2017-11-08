@@ -12,20 +12,22 @@ const movieList = function(req, res) {
 
 const movieDetails = function(req, res) {
     res.render("movie-details", {
-      title: "Movie Details",
+      title: "Atomic Films",
       pageHeader: {
         title: "Film Synopsis & Details",
-        tagline: "Find out what your favourite classic is all about, including the famous stars in the film, and the year it was released in the information below."
-      }});
+        tagline: "Find out what your favourite classic film is all about, including which stars featured, and the year it was released in the information below."
+      }
+		});
 };
 
 const reserveMovie = function(req, res) {
     res.render("reserve-movie", {
-      title: "Reserve a Movie",
+      title: "Atomic Films",
       pageHeader: {
         title: "Reserve A Movie",
         tagline: "Beat the lineups and reserve a ticket and seat ahead of time!"
-      }});
+      }
+		});
 };
 
 module.exports = {
