@@ -1,260 +1,261 @@
 extends layout
 
 block content
- 	//- Movie List Summary Section
+  //- Movie List Summary Section
   section.jumbotron.text-center
     .container
       h1.jumbotron-heading-text= pageHeader.title
       p.lead.text-white= pageHeader.tagline
-			br
-			br
-			.container
-				.row
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster2.jpg", alt="movie poster 2")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster2.jpg", alt="movie poster 2")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster3.jpg", alt="movie poster 3")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster4.jpg", alt="movie poster 4")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster5.jpg", alt="movie poster 5")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster6.jpg", alt="movie poster 6")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster7.jpg", alt="movie poster 7")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster8.jpg", alt="movie poster 8")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					br
-					br
-					.col-6.col-md-4
-						.thumbnail
-							img.img-responsive.w-100(src="./images/moviePoster9.jpg", alt="movie poster 9")
-							br
-							br
-							a.btn-link(href="/movies")
-								button.btn.btn-warning(type="button") Info
-					       
+    br
+    br
+    .container
+      .row
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster1.jpg", alt="movie poster 1")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster2.jpg", alt="movie poster 2")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster3.jpg", alt="movie poster 3")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster4.jpg", alt="movie poster 4")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster5.jpg", alt="movie poster 5")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster6.jpg", alt="movie poster 6")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster7.jpg", alt="movie poster 7")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster8.jpg", alt="movie poster 8")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+          br
+          br
+        .col-6.col-md-4
+          .thumbnail
+            img.img-responsive.w-100(src="./images/moviePoster9.jpg", alt="movie poster 9")
+            br
+            br
+            a.btn-link(href="/movies")
+              button.btn.btn-warning(type="button") Info
+              
+              
+              
+        
+      //- UNDO THIS IF THE ABOVE DOES NOT WORK!!!
+        .col-12.col-md-8
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Viva Las Vegas
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster1.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Paradise Canyon
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster2.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Guys And Dolls
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster3.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning The Thing (From Another World)
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster4.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Hot-Rod Girl
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster5.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Dragstrip Riot
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster6.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning La Dolce Vita
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster7.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Vertigo
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster8.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily show times
+          br
+          .card.mt-2
+            .card-body
+              h4.card-title-text.text-warning Ocean's Eleven
+              .col-sm-8
+                .panel.panel-primary
+                  //.panel-heading Anatomy Of A Murder
+                  .panel-body
+                    img.img-responsive.img-rounded(src="./images/moviePoster9.jpg", style="width:75%", alt="Movie Poster #1")
+              a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
+              br
+              h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times & Info
+              
 
-
-
-					//- UNDO THIS IF THE ABOVE DOES NOT WORK!!!
-						.col-12.col-md-8
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Viva Las Vegas
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster1.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Paradise Canyon
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster2.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Guys And Dolls
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster3.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning The Thing (From Another World)
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster4.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Hot-Rod Girl
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster5.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Dragstrip Riot
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster6.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning La Dolce Vita
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster7.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Vertigo
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster8.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily show times
-							br
-							.card.mt-2
-								.card-body
-									h4.card-title-text.text-warning Ocean's Eleven
-									.col-sm-8
-										.panel.panel-primary
-											//.panel-heading Anatomy Of A Murder
-											.panel-body
-												img.img-responsive.img-rounded(src="./images/moviePoster9.jpg", style="width:75%", alt="Movie Poster #1")
-									a.card-link.btn.btn-info.float-right(href="/movies") Synopsis
-									br
-									h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times & Info
-
-
-		//-
-			 .row
-				.col-12-.col-md-8
-					p Movies List Area
-
-
-			.card-mt-2
-				.card-body
-					h1.card-title Anatomy Of A murder
-					h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times
-					a.card-link.btn.btn-primary.float-right(href"/movies") Info
-				.card-mt-2
-					.card-body
-						h1.card-title Destination Moon
-						h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times
-						a.card-link.btn.btn-primary.float-right(href"/movies") Info
-				.card-mt-2
-					.card-body
-						h1.card-title Dr. Cyclops
-						h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times
-						a.card-link.btn.btn-primary.float-right(href"/movies") Info
-
-				.col-12-.col-md-4
-					p SideBar
-				.col-12.col-md-4
-					p.lead.p1-4.pt-5.af-header-font.af-sb-color Atomic Films offers the best 'blast from the past' movie experience, with the classics that have stood the test of time. Sit back, enjoy some popcorn, and relive the cinematic greats.
-
-
-			//-
-				.container
-				//- Background image
-				img.responsive(src="./images/fullTheatre.jpg" alt="Full Theatre" width="100%" height="100%")
-				h2.text-left Feature Films
-
-			//- Feature Films Carousel
-				#movieCarousel.carousel.slide.bg-inverse.w-50.ml-auto.mr-auto(data-ride="carousel")
-					ol.carousel-indicators
-						li.active(data-target="#movieCarousel", data-slide-to="0")
-						li(data-target="#movieCarousel", data-slide-to="1")
-						li(data-target="#movieCarousel", data-slide-to="2")
-					.carousel-inner(role="listbox")
-						.carousel-item.active
-							img.d-block.w-100(src="./images/moviePoster1.jpg" alt="Movie Poster #1")
-						.carousel-item
-							img.d-block.w-100(src="./images/moviePoster2.jpg" alt="Movie Poster #2")
-						.carousel-item
-							img.d-block.w-100(src="./images/moviePoster3.jpg" alt="Movie Poster #3")
-					a.carousel-control-prev(href='#movieCarousel', role='button', data-slide='prev')
-						span.carousel-control-prev-icon(aria-hidden='true')
-						span.sr-only Previous
-					a.carousel-control-next(href='#movieCarousel', role='button', data-slide='next')
-						span.carousel-control-next-icon(aria-hidden="false")
-						span.sr-only Next
-			//
+//-
+   .row
+    .col-12-.col-md-8
+      p Movies List Area
+    
+      
+  .card-mt-2
+    .card-body
+      h1.card-title Anatomy Of A murder
+      h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times
+      a.card-link.btn.btn-primary.float-right(href"/movies") Info
+    .card-mt-2
+      .card-body
+        h1.card-title Destination Moon
+        h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times
+        a.card-link.btn.btn-primary.float-right(href"/movies") Info
+    .card-mt-2
+      .card-body
+        h1.card-title Dr. Cyclops
+        h6.card-subtitle.text-muted.pt-1.float-left Daily Show Times
+        a.card-link.btn.btn-primary.float-right(href"/movies") Info
+    
+    .col-12-.col-md-4
+      p SideBar
+    .col-12.col-md-4
+      p.lead.p1-4.pt-5.af-header-font.af-sb-color Atomic Films offers the best 'blast from the past' movie experience, with the classics that have stood the test of time. Sit back, enjoy some popcorn, and relive the cinematic greats.
+    
+  
+  //-
+    .container
+    //- Background image
+    img.responsive(src="./images/fullTheatre.jpg" alt="Full Theatre" width="100%" height="100%")
+    h2.text-left Feature Films
+    
+  //- Feature Films Carousel
+    #movieCarousel.carousel.slide.bg-inverse.w-50.ml-auto.mr-auto(data-ride="carousel")
+      ol.carousel-indicators
+        li.active(data-target="#movieCarousel", data-slide-to="0")
+        li(data-target="#movieCarousel", data-slide-to="1")
+        li(data-target="#movieCarousel", data-slide-to="2")
+      .carousel-inner(role="listbox")
+        .carousel-item.active
+          img.d-block.w-100(src="./images/moviePoster1.jpg" alt="Movie Poster #1")
+        .carousel-item
+          img.d-block.w-100(src="./images/moviePoster2.jpg" alt="Movie Poster #2")
+        .carousel-item
+          img.d-block.w-100(src="./images/moviePoster3.jpg" alt="Movie Poster #3")
+      a.carousel-control-prev(href='#movieCarousel', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#movieCarousel', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden="false")
+        span.sr-only Next
+  //
+   
