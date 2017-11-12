@@ -5,7 +5,7 @@
 body {
   padding-top: 1px;
   padding-bottom: 40px;
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 
@@ -14,30 +14,32 @@ body {
   font-family: 'Megrim', sans-serif;
   font-size: 3.5rem;
   font-weight: bolder;
-  color: #bf7d00;
+  color: #b57700;
 }
 
 #afBrandMotto {
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 p.af-header-font {
-  color: #dba133;
-  font-family: 'Exo', sans-serif;
-  font-size: 18px;
+	color: #dba133;
+	font-family: 'Exo', sans-serif;
+	font-size: 18px;
 }
 
 
 /******************** Navbar section (ALL PAGES) **********************/
 nav.navbar {
-		background-color: #000000;
+	background-color: #bf7d00;
+	padding-bottom: 2px;
+	padding-top: 2px;
 }
 
 #mainNavbar li.nav-item a {
-  color: #4c9a9a;
+  color: #000000;
   font-family: 'Bungee Hairline', sans-serif;
   font-size: 1.25rem;
-  font-weight: bold; 
+  font-weight: bolder; 
 }
 
 #mainNavbar li.nav-item a:hover {
@@ -45,7 +47,7 @@ nav.navbar {
 }
 
 #mainNavbar li.nav-item a:active {
-  color: #e86404;
+  color: #0287af;
 }
 
 li {
@@ -56,7 +58,7 @@ li {
 
 /***************** Movies Page (MOVIE-LIST) *****************/
 section.jumbotron {
-    background-color: #585656;
+    background-color: #000000;
 }
 
 
@@ -102,11 +104,11 @@ button.btn:hover {
 
 /************************ Footer section (ALL PAGES) **************************/
 footer {
-  background-color: #000000;
+  background-color: #bf7d00;
 }
 
 footer a {
-  color: #bf7d00;
+  color: #0a586f;
   text-decoration: none !important;
 }
 
@@ -116,7 +118,7 @@ footer a:hover {
 
 p.af-footer-text {
   font-family: 'Bungee Hairline', sans-serif;
-  color: #4c9a9a;
+  color: #000000;
 }
 
 
