@@ -17,7 +17,7 @@ const movieDetails = function(req, res) {
         title: "Film Synopsis & Details",
         tagline: "Find out what your favourite classic film is all about, including which stars featured, and the year it was released in the information below."
       }
-		});
+    });
 };
 
 const reserveMovie = function(req, res) {
@@ -27,7 +27,7 @@ const reserveMovie = function(req, res) {
         title: "Reserve A Movie",
         tagline: "Beat the lineups and reserve a ticket and seat ahead of time!"
       }
-		});
+    });
 };
 
 module.exports = {
