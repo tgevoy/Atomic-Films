@@ -3,55 +3,55 @@
 
 /********************* Body section (ALL PAGES) ***********************/
 body {
-  padding-top: 1px;
-  padding-bottom: 40px;
-  background-color: #ffffff;
+    padding-top: 1px;
+    padding-bottom: 40px;
+    background-color: #ffffff;
 }
 
 
 /******************** Atomic-Films brand section (ALL PAGES) *********************/
 .atomicFilms-brand-text {
-  font-family: 'Megrim', sans-serif;
-  font-size: 3.5rem;
-  font-weight: bolder;
-  color: #b57700;
+    font-family: 'Megrim', sans-serif;
+    font-size: 3.5rem;
+    font-weight: bolder;
+    color: #b57700;
 }
 
-#afBrandMotto {
-  background-color: #ffffff;
+#af-brand {
+    background-color: #ffffff;
 }
 
 p.af-header-font {
-	color: #dba133;
-	font-family: 'Exo', sans-serif;
-	font-size: 18px;
+    color: #dba133;
+    font-family: 'Exo', sans-serif;
+    font-size: 18px;
 }
 
 
 /******************** Navbar section (ALL PAGES) **********************/
 nav.navbar {
-	background-color: #bf7d00;
-	padding-bottom: 2px;
-	padding-top: 2px;
+    background-color: #bf7d00;
+    padding-bottom: 2px;
+    padding-top: 2px;
 }
 
 #mainNavbar li.nav-item a {
-  color: #000000;
-  font-family: 'Bungee Hairline', sans-serif;
-  font-size: 1.25rem;
-  font-weight: bolder; 
+    color: #000000;
+    font-family: 'Bungee Hairline', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bolder; 
 }
 
 #mainNavbar li.nav-item a:hover {
-  color: #e5e1ca;
+    color: #e5e1ca;
 }
 
 #mainNavbar li.nav-item a:active {
-  color: #0287af;
+    color: #0287af;
 }
 
 li {
-  display: inline-block;
+    display: inline-block;
 }
 
 
@@ -65,38 +65,40 @@ section.jumbotron {
 
 /***************** Synopsis Page (MOVIE-DETAILS) ****************/
 h4.card-title-text {
-  font-family: 'Teko', sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
+    font-family: 'Teko', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 h1.jumbotron-heading-text {
-  color: #bf7d00;
-  font-family: 'Anton', sans-serif;
+    color: #bf7d00;
+    font-family: 'Anton', sans-serif;
 }
 
 p.card-text {
-  font-family: 'Exo', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 
 
 
 /****************** Reserve Page (RESERVE-MOVIE) *******************/
-form.text {
-  font-family: 'Exo', sans-serif;
-}
+
 
 
 
 
 /****************** Contact Page (CONTACT) *******************/
 h4.card-title-text {
-  color: #bf7d00;
-  font-family: 'Exo', sans-serif;
+    color: #bf7d00;
+    font-family: 'Exo', sans-serif;
+}
+
+form.text {
+    font-family: 'Exo', sans-serif;
 }
 
 button.btn:hover {
-  background-color: #4c9a9a;
+    background-color: #4c9a9a;
 }
 
 
@@ -104,21 +106,21 @@ button.btn:hover {
 
 /************************ Footer section (ALL PAGES) **************************/
 footer {
-  background-color: #bf7d00;
+    background-color: #bf7d00;
+    padding-top: 5px;
 }
 
 footer a {
-  color: #0a586f;
-  text-decoration: none !important;
+    color: #0a586f;
+    text-decoration: none !important;
 }
 
 footer a:hover {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 p.af-footer-text {
-  font-family: 'Bungee Hairline', sans-serif;
-  color: #000000;
+    font-family: 'Bungee Hairline', sans-serif;
+    color: #000000;
 }
-
 

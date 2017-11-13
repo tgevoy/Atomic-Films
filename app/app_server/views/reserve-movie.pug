@@ -1,9 +1,11 @@
 extends layout
 
 block content
-  section.jumbotron.text-center.bg-dark
+  section.jumbotron.text-center
     .container
-      h1.jumbotron-heading-text= pageHeader.title
+      h1.jumbotron-heading-text= pageHeader.heading
+      br
+      br
       p.lead.text-white= pageHeader.tagline
     .card
       .card-body.bg-dark
