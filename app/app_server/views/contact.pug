@@ -3,10 +3,10 @@ extends layout
 block content
   section.jumbotron.text-center
     .container
-      h1.jumbotron-heading-text= pageHeader.title
+      h1.jumbotron-heading-text= pageHeader.heading
       br
       br
-      p.lead.text-white= pageHeader.formTagline
+      p.lead.text-white= pageHeader.tagline
     br
     .card
       .card-body.bg-dark
@@ -27,7 +27,7 @@ block content
           .form-group.row
             label.col-form-label.col-sm-2
             .col-sm-6
-              button.btn.btn-info(type="submit") Send Message
+              button.btn.btn-info.float-left(type="submit") Send Message
               
               
               
