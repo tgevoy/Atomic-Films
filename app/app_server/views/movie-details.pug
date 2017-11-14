@@ -14,29 +14,11 @@ block content
     .container
       each movie in movies
         .row
-          .card.w-100.bg-secondary
-            .card-body
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp1.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 11:00 A.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 2:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 5:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp2.jpg", style="width:40%")
+          .card.w-100.bg-dark
+            br
+            .card-body.bg-dark.text-white
+              h4.card-title-text.text-warning.text-center #{movie.film} (#{movie.year})
+              img.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
               br
               p.card-text.text-justify-content-center= movie.summary
               br
@@ -44,140 +26,20 @@ block content
                 .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
                   .btn-group.mr-2(role="group", aria-label="First Show Time")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 11:00 A.M.
+                      button.btn.btn-light(type="button")= movie.showTime1
                   .btn-group.mr-2(role="group", aria-label="Second Show Time")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 2:00 P.M.
+                      button.btn.btn-light(type="button")= movie.showTime2
                   .btn-group.mr-2(role="group", aria-label="Third Show Time")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 5:00 P.M.
+                      button.btn.btn-light(type="button")= movie.showTime3
               br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp3.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 12:00 A.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 3:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 6:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp4.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 1:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 4:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 7:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-resonsive.mx-auto.d-block(src="./images/mp5.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 2:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 5:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 8:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp6.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 3:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 6:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 9:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp11.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 4:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 7:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 10:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp12.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 3:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 6:00 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 9:00 P.M.
-              br
-              br
-              h4.card-title-text.text-warning.text-center #{movie.film} #{movie.year}
-              img.img-responsive.mx-auto.d-block(src="./images/mp9.jpg", style="width:40%")
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              br
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 11:30 A.M.
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 2:30 P.M.
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-dark(type="button") 6:30 P.M.
-              br
+            br
+          br
+        br
+        br
+        
+              
 
 
 
