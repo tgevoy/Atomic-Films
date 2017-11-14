@@ -16,8 +16,7 @@ const movieDetails = function(req, res) {
     pageHeader: {
       heading: "Film Synopsis & Details",
       tagline: "Find out what your favourite classic film is all about, including which stars featured, and the year it was released in the information below."
-    }
-    /*
+    },
     movies: [{
       film: "Casablanca",
       year: "1942",
@@ -55,7 +54,6 @@ const movieDetails = function(req, res) {
       year: "1928",
       summary: "Wrongfully accused of criminal acts, a tramp (Charlie Chaplin) unwittingly ducks into a big top, where his bumbling attempts to avoid pursuing police officers earn the laughter and applause of the circus-goers. Impressed, the ringmaster (Allan Garcia) decides to employ the tramp as an entertainer. In between getting trapped in a lion's cage and partaking in clumsy high wire escapades, he falls for a beautiful show rider (Merna Kennedy), who unfortunately has eyes for a daring tightrope acrobat."
     }]
-    */
   });
 };
 
