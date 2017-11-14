@@ -5,7 +5,7 @@ const movieList = function(req, res) {
     title: "Atomic Films",
     pageHeader: {
       heading: "Feature Films",
-      tagline: "...enjoy the classics of yesterday, today!",
+      tagline: "...enjoy the classics of yesterday, today!"
 		}
   });
 };
@@ -16,7 +16,7 @@ const movieDetails = function(req, res) {
     pageHeader: {
       heading: "Film Synopsis & Details",
       tagline: "Find out what your favourite classic film is all about, including which stars featured, and the year it was released in the information below."
-		}
+    }
     /*
     movies: [{
       film: "Casablanca",
@@ -64,8 +64,9 @@ const reserveMovie = function(req, res) {
     title: "Atomic Films",
     pageHeader: {
       heading: "Reserve A Movie",
-      tagline: "Beat the lineups and reserve a ticket and seat ahead of time!"
-		}
+      tagline: "Beat the lineups and reserve a ticket and seat ahead of time!",
+      message: "Nice choice! You've selected a great classic film to enjoy!"
+	}
   });
 };
 
