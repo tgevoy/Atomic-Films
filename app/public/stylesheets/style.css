@@ -15,9 +15,10 @@ body {
     font-size: 3.5rem;
     font-weight: bolder;
     color: #b57700;
+    padding-top: 10px;
 }
 
-#af-brand {
+.af-brand {
     background-color: #ffffff;
 }
 
@@ -35,18 +36,18 @@ nav.navbar {
     padding-top: 2px;
 }
 
-#mainNavbar li.nav-item a {
+#collapseNavbar li.nav-item a {
     color: #000000;
     font-family: 'Bungee Hairline', sans-serif;
     font-size: 1.25rem;
     font-weight: bolder; 
 }
 
-#mainNavbar li.nav-item a:hover {
-    color: #e5e1ca;
+#collapseNavbar li.nav-item a:hover {
+    color: #ffffff;
 }
 
-#mainNavbar li.nav-item a:active {
+#collapseNavbar li.nav-item a:active {
     color: #0287af;
 }
 
@@ -107,7 +108,8 @@ button.btn:hover {
 /************************ Footer section (ALL PAGES) **************************/
 footer {
     background-color: #bf7d00;
-    padding-top: 5px;
+    padding-bottom: 5px;
+   
 }
 
 footer a {

@@ -6,7 +6,35 @@ const movieList = function(req, res) {
     pageHeader: {
       heading: "Feature Films",
       tagline: "...enjoy the classics of yesterday, today!"
-		}
+		},
+    movies: [{
+      poster: "/images/mp1.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp2.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp3.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp4.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp5.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp6.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp11.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp12.jpg",
+      information: "Info"
+    }, {
+      poster: "/images/mp9.jpg",
+      information: "Info"
+    }]
   });
 };
 
