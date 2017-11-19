@@ -10,6 +10,10 @@ services:
       - NODE_ENV=development # "development will be changed to "production" once app is published or performance suffers.
     ports:
       - "3000:3000"
+    links:  # Tells node container to link to mongo container (Lab 9 Task 1)
+      - db
     volumes:
       - ./app:/home/node/app
     command: "nodemon -L"
+  db:
+    image: mongo:3.2.9  # Mongo image
