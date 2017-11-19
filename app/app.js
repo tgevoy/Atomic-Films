@@ -8,7 +8,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 
 const appRouter = require('./app_server/routes/app_router');
-
+require('./app_server/models/db');  /* This line executes code in the db.js file */
 var app = express();
 
 // view engine setup

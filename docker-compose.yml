@@ -17,3 +17,4 @@ services:
     command: "nodemon -L"
   db:
     image: mongo:3.2.9  # Mongo image
+    container_name: mongo
