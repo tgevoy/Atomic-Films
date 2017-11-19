@@ -16,3 +16,5 @@ mongoose.connection.on('error', function(err) {
 mongoose.connection.on('disconnected', function() {
   console.log('Mongoose disconnected.');
 });
+
+require('./movie_schema');
