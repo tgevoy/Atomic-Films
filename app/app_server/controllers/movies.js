@@ -5,7 +5,7 @@ const movieList = function(req, res) {
     title: "Atomic Films",
     pageHeader: {
       heading: "Feature Films",
-      tagline: "...enjoy the classics of yesterday, today!"
+      tagline: "Welcome to Atomic Films, where you can enjoy the classics of yesterday, today! Our current feature films are some of Hollywood's best creations and most talked about. For further details, select the movie's button to find out further movie information."
 		},
     movies: [{
       poster: "/images/mp1.jpg",
@@ -43,7 +43,7 @@ const movieDetails = function(req, res) {
     title: "Atomic Films",
     pageHeader: {
       heading: "Film Synopsis & Details",
-      tagline: "Find out what your favourite classic film is all about, including which stars featured, and the year it was released in the information below."
+      tagline: "Never seen that classic movie your friends and family are always talking about? Can't quite remember that exciting plot twist? Look no further! Atomic Films has you covered on all the necessary details, including the stars featured in each movie, the movie's release year, and an exciting synopsis to make you want more."
     },
     movies: [{
       film: "Casablanca",

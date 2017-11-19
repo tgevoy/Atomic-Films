@@ -11,17 +11,18 @@ block content
     br
     br
     .container
-      .row.justify-content-center
+      .row.justify-content-center.bg-black
         each movie in movies
           .col-6.col-md-4
             .thumbnail
-              img.img-responsive.w-100(src= movie.poster)
+              img.img-fluid.w-100(src= movie.poster)
               br
               br
               a.btn-link(href="/movies")
-                button.btn.btn-warning(type="button")= movie.information
+                button.btn.btn-success(type="button")= movie.information
             br
             br
+            
       //-
         .col-6.col-md-4
           .thumbnail
