@@ -32,5 +32,13 @@ const movieSchema = new mongoose.Schema({
     required: true,
     enum: ["/images/mp1.jpg", "/images/mp2.jpg", "/images/mp3.jpg", "/images/mp4.jpg", "/images/mp5.jpg",
           "/images/mp6.jpg", "/images/mp11.jpg", "/images/mp12.jpg", "/images/mp9.jpg"]
+  },
+  showTimes: {
+    type: String,
+    required: true,
+    enum: ["10:00 A.M.", "10:15 A.M.", "10:30 A.M.", "11:00 A.M.", "11:15 A.M.", "12:00 P.M.", "12:30 P.M.", "12:45 P.M.",
+           "1:00 P.M.", "1:15 P.M.", "2:00 P.M.", "2:30 P.M.", "2:45 P.M.", "3:00 P.M.", "3:45 P.M.", "4:00 P.M.", "4:15 P.M.",
+          "4:45 P.M.", "5:00 P.M.", "5:15 P.M.", "6:00 P.M.", "6:15 P.M.", "6:30 P.M.", "7:00 P.M.", "7:15 P.M.", "7:30 P.M.",
+          "8:00 P.M.", "8:15 P.M.", "8:30 P.M.", "9:00 P.M.", "9:30 P.M."]
   }
 });

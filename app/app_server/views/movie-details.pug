@@ -26,13 +26,13 @@ block content
                 .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
                   .btn-group.mr-2(role="group", aria-label="First Show Time")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-success(type="button")= movie.showTime1
+                      button.btn.btn-success(type="button")= movie.showTimes[showTime1]
                   .btn-group.mr-2(role="group", aria-label="Second Show Time")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-success(type="button")= movie.showTime2
+                      button.btn.btn-success(type="button")= movie.showTimes[showTime2]
                   .btn-group.mr-2(role="group", aria-label="Third Show Time")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-success(type="button")= movie.showTime3
+                      button.btn.btn-success(type="button")= movie.showTimes[showTime3]
               br
             br
           br
