@@ -24,6 +24,7 @@ block content
               br
               .container
                 .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+                  p.text-justify-content-center.text-info= movie.day
                   .btn-group.mr-2(role="group", aria-label="First Show Time")
                     a.btn-link(href="/movies/reserve")
                       button.btn.btn-success(type="button")= movie.showTimes[0]
@@ -31,86 +32,11 @@ block content
                     a.btn-link(href="/movies/reserve")
                       button.btn.btn-success(type="button")= movie.showTimes[1]
                   .btn-group.mr-2(role="group", aria-label="Third Show Time")
+  
                     a.btn-link(href="/movies/reserve")
                       button.btn.btn-success(type="button")= movie.showTimes[2]
-                  br
-                  p.text-justify-content-center.text-info= movie.day
               br
             br
           br
         br
         br
-        
-              
-
-
-
-
-//-
-  .container
-    .row
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading Viva Las Vegas
-            .panel-body
-              img.img-responsive(src="./images/moviePoster1.jpg", style="width:100%", alt="Movie Poster #4")
-            .panel-footer Daily Show Times: 11:00am, 2:00pm, 5:00pm
-      br
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading Paradise Canyon
-            .panel-body
-              img.img-responsive(src="./images/moviePoster2.jpg", style="width:100%", alt="Movie Poster #4")
-            .panel-footer Daily Show Times: 11:00am, 2:00pm, 5:00pm
-      br
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading Guys And Dolls
-            .panel-body
-              img.img-responsive(src="./images/moviePoster3.jpg", style="width:100%", alt="Movie Poster #4")
-            .panel-footer Daily Show Times: 11:00am, 2:00pm, 5:00pm
-      br
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading The Thing
-            .panel-body
-              img.img-responsive(src="./images/moviePoster4.jpg", style="width:100%", alt="Movie Poster #4")
-            .panel-footer Daily Show Times: 11:00am, 2:00pm, 5:00pm
-      br
-      .col-sm-4
-        .panel.panel-danger
-          .panel-heading Pirates Of Penzance
-            .panel-body
-              img.img-responsive(src="./images/moviePoster5.jpg", style='width:100%', alt="Movie Poster #5")
-            .panel-footer Daily Show Times: 12:00pm, 2:00pm, 4:30pm
-      br
-      .col-sm-4
-        .panel.panel-success
-          .panel-heading Dragstrip Riot
-            .panel-body
-              img.img-responsive(src="./images/moviePoster6.jpg", style='width:100%', alt="Movie Poster #6")
-            .panel-footer Daily Show Times: 1:00pm, 4:00pm, 7:00pm
-  br
-  br
-  .container
-    .row
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading La Dolce Vita
-            .panel-body
-              img.img-responsive(src="./images/moviePoster7.jpg", style='width:100%', alt="Movie Poster #7")
-            .panel-footer Daily Show Times: 6:00pm, 9:00pm 11:30pm
-      br
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading Vertigo
-            .panel-body
-              img.img-responsive(src="./images/moviePoster8.jpg", style='width:100%', alt="Movie Poster #8")
-            .panel-footer Daily Show Times 11:00am, 2:00pm, 6:00pm
-      br
-      .col-sm-4
-        .panel.panel-primary
-          .panel-heading Ocean's Eleven
-            .panel-body
-              img.img-responsive(src="./images/moviePoster9.jpg", style='width:100%', alt="Movie Poster #9")
-            .panel-footer Daily Show Times: 12:00pm, 3:30pm, 7:00pm

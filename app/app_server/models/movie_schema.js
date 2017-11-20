@@ -26,6 +26,6 @@ const movieSchema = new mongoose.Schema({
   showTimes: [String]
 });
 
-let movie = mongoose.model('movie', movieSchema);
+mongoose.model('movie', movieSchema);
 
 
