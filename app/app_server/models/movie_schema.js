@@ -25,3 +25,7 @@ const movieSchema = new mongoose.Schema({
   days: [String],
   showTimes: [String]
 });
+
+let movie = mongoose.model('movie', movieSchema);
+
+
