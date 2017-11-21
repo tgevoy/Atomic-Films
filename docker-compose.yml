@@ -18,3 +18,7 @@ services:
   db:
     image: mongo:3.2.9  # Mongo image
     container_name: mongo
+    environment:
+      - MONGO_INITDB_DATABASE=atomic-films # Sets up database to be initialized with data
+    volumes:
+      - ./mongo-seed:/docker-entrypoint-initdb.d # Mounts a Mongo-seed subdirectory to the docker-entrypoint-initdb.d directory in the container. This allows any Shell or JavaScript scripts to run automagically after MongoDB comes up

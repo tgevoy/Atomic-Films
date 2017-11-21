@@ -20,7 +20,8 @@ const movieSchema = new mongoose.Schema({
     required: true,
   },
   days: [String],
-  showTimes: [String]
+  showTimes: [String],
+  price: [String]
 });
 
 mongoose.model('movie', movieSchema);

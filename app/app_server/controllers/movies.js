@@ -52,6 +52,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp1.jpg",
       day: "Daily Showings",
       showTimes: ["10:00 A.M.", "2:00 P.M.", "6:00 P.M."],
+      price: "$15"
       }, {
       film: "One Flew Over The Cuckoo's Nest",
       year: "1975",
@@ -59,6 +60,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp2.jpg",
       day: "Daily Showings",
       showTimes: ["10:15 A.M.", "2:30 P.M.", "6:15 P.M."],
+      price: "$15"
       }, {
       film: "A Clockwork Orange",
       year: "1971",
@@ -66,6 +68,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp3.jpg",
       day: "Daily Showings",
       showTimes: ["10:30 A.M.", "3:00 P.M.", "6:45 P.M."],
+      price: "$15"
       }, {
       film: "Wizard Of Oz",
       year: "1939",
@@ -73,6 +76,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp4.jpg",
       day: "Daily Showings",
       showTimes: ["10:45 A.M.", "3:30 P.M.", "7:00 P.M."],
+      price: "$15"
       }, {
       film: "The Godfather",
       year: "1972",
@@ -80,6 +84,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp5.jpg",
       day: "Daily Showings",
       showTimes: ["11:00 A.M.", "4:00 P.M.", "7:30 P.M."],
+      price: "$15"
       }, {
       film: "2001: A Space Odyssey",
       year: "1968",
@@ -87,6 +92,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp6.jpg",
       day: "Daily Showings",
       showTimes: ["11:15 A.M.", "4:30 P.M.", "7:45 P.M."],
+      price: "$15"
       }, {
       film: "Anatomy Of A Murder",
       year: "1959",
@@ -94,6 +100,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp11.jpg",
       day: "Daily Showings",
       showTimes: ["11:30 A.M.", "5:00 P.M.", "8:00 P.M."],
+      price: "$15"
       }, {
       film: "12 Angry Men",
       year: "1957",
@@ -101,6 +108,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp12.jpg",
       day: "Daily Showings",
       showTimes: ["11:45 A.M.", "5:30 P.M.", "8:15 P.M."],
+      price: "$15"
       }, {
       film: "The Circus",
       year: "1928",
@@ -108,6 +116,7 @@ const movieDetails = function(req, res) {
       poster: "/images/mp9.jpg",
       day: "Daily Showings",
       showTimes: ["12:00 P.M.", "6:00 P.M.", "9:00 P.M."],
+      price: "$15"
       }]
     });
   };
