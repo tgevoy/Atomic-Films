@@ -16,7 +16,7 @@ services:
       - ./app:/home/node/app
     command: "nodemon -L"
   db:
-    image: mongo:3.2.9  # Mongo image
+    image: mongo:3.4.10  # Mongo image
     container_name: mongo
     environment:
       - MONGO_INITDB_DATABASE=atomic-films # Sets up database to be initialized with data
