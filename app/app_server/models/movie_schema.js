@@ -24,4 +24,4 @@ const movieSchema = new mongoose.Schema({
   price: [String]
 });
 
-mongoose.model("movie", movieSchema);
+mongoose.model('movie', movieSchema);

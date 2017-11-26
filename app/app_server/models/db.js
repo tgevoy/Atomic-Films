@@ -1,9 +1,7 @@
 const mongoose = require('mongoose'); /* Loads mongoose module and exposes its functions via declared constant name 'mongoose */
 
 const dbURI = 'mongodb://mongo/atomic-films'; /* Database connection string */
-mongoose.connect(dbURI, {
-  useMongoClient: true
-});
+mongoose.connect(dbURI, { useMongoClient: true });
 
 mongoose.connection.on('connected', function() {
   console.log('Mongoose connected to ' + dbURI);
