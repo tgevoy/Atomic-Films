@@ -48,17 +48,16 @@ deploy_db_to_dokku:
     # use a deploy runner
     - deploy
   script:
-    # Unlink Service - the conditional is if this is being run on first deploy
-    - 'ssh dokku@DEPLOY_SRV mongo:unlink ${CI_PROJECT_NAME}-DB $CI_PROJECT_NAME || true'
-    # Destroy DB - the conditional is if on first run, the DB hasn't been created yet
-    - 'ssh dokku@DEPLOY_SRV -- --force mongo:destroy ${CI_PROJECT_NAME}-DB || true'
-    # Create/Re-create DB
-    - ssh dokku@DEPLOY_SRV mongo:create ${CI_PROJECT_NAME}-DB
-    # Import dump
-    - ssh dokku@DEPLOY_SRV mongo:import ${CI_PROJECT_NAME}-DB < ./mongo-seed/dump.gz
-    # Link DB container to app
-    - ssh dokku@DEPLOY_SRV mongo:link ${CI_PROJECT_NAME}-DB $CI_PROJECT_NAME
+  # Unlink Service - the conditional is if this is being run on first deploy
+  - 'ssh dokku@$DEPLOY_SRV mongo:unlink ${CI_PROJECT_NAME}-DB $CI_PROJECT_NAME || true'
+  # Destroy DB - the conditional is if on first run, the DB hasn't been created yet
+  - 'ssh dokku@$DEPLOY_SRV -- --force mongo:destroy ${CI_PROJECT_NAME}-DB || true'
+  # Create/Re-create DB
+  - ssh dokku@$DEPLOY_SRV mongo:create ${CI_PROJECT_NAME}-DB
+  # Import dump
+  - ssh dokku@$DEPLOY_SRV mongo:import ${CI_PROJECT_NAME}-DB < ./mongo-seed/dump.gz
+  # link DB container to app
+  - ssh dokku@$DEPLOY_SRV mongo:link ${CI_PROJECT_NAME}-DB $CI_PROJECT_NAME
   only:
     # Ensures that this stage ONLY RUNS on Master branch!
     - master
-  
