@@ -1,6 +1,11 @@
 const mongoose = require('mongoose'); /* Loads mongoose module and exposes its functions via declared constant name 'mongoose */
 
-const dbURI = 'mongodb://mongo/atomic-films'; /* Database connection string */
+let dbURI = 'mongodb://mongo/atomic-films'; /* Database connection string */
+
+/* Test environent variable, if true, then application must be running on the deploy server */
+if (process.env.NODE_ENV === 'production') {
+  dbURI = process.env.MONGO_URL;
+}
 mongoose.connect(dbURI, { useMongoClient: true });
 
 mongoose.connection.on('connected', function() {
