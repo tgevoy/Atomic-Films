@@ -1,4 +1,4 @@
-// ------------------------- movieSchema for movie-list page ------------------------------
+
 db.movies.save({
   id: 1,
   title: "Casablanca",
@@ -53,7 +53,7 @@ db.movies.save({
   poster: "/images/mp9.jpg",
 });
 
-// ------------------------- movieShowTimeSchema ------------------------------
+
 db.movieShowtimes.save({
   title: "Casablanca",
   theaterNum: 1,
