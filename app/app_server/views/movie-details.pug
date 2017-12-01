@@ -6,8 +6,9 @@ block content
     .container
       h1.jumbotron-heading-text= pageHeader.heading
       br
-      br
       p.lead.text-white= pageHeader.tagline
+      br
+      p.text-white= pageHeader.message
     br
     br
     .container
@@ -16,7 +17,8 @@ block content
           .card.w-100.bg-dark
             br
             .card-body.bg-dark.text-white
-              h4.card-title-text.text-warning.text-center #{movie.film} (#{movie.year})
+              h4.card-title-text.text-warning.text-center [#{movie.id}]
+              h4.card-title-text.text-warning.text-center #{movie.title} (#{movie.year})
               img.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
               br
               p.card-text.text-justify-content-center= movie.summary
@@ -33,10 +35,6 @@ block content
                   .btn-group.mr-2(role="group", aria-label="Third Show Time")
                     a.btn-link(href="/movies/reserve")
                       button.btn.btn-success(type="button")= movie.showTimes[2]
-                  br
-                  br
-                  p.text-justify-content-center.text-info= movie.price
-              br
             br
           br
         br

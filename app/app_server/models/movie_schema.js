@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const movieSchema = new mongoose.Schema({
-  film: {
+  title: {
     type: String,
     required: true,
     enum: ["Casablanca", "One Flew Over The Cuckoo's Nest", "A Clockwork Orange", "Wizard Of Oz", "The Godfather",
