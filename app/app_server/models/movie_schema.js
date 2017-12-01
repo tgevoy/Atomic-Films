@@ -1,35 +1,79 @@
 const mongoose = require('mongoose');
 
+// For movies-list home page
 const movieSchema = new mongoose.Schema({
-  theatre: {
-    type: String,
-    required: true,
-    enum: ["Theater #1", "Theater #2", "Theater #3",
-           "Theater #4", "Theater #5", "Theater #6",
-           "Theater #7", "Theater #8", "Theater #9"]
+  id: {
+    type: Number,
+    default: 1,
+    min: 1,
+    max: 9
   },
   title: {
     type: String,
     required: true,
     enum: ["Casablanca", "One Flew Over The Cuckoo's Nest", "A Clockwork Orange",
           "Wizard Of Oz", "The Godfather", "2001: A Space Odyssey",
-          "Anatomy Of A Murder", "12 Angry Men", "The Circus"]
+          "Anatomy Of A Murder", "12 Angry Men", "The Circus"
+    ]
   },
-  year: {
+  poster: {
+    type: String
+  },
+  details: {
+    type: String
+  }
+});
+
+// For movie-details page
+const movieShowTimeSchema = new mongoose.Schema({
+  theaterNum: {
+    type: Number,
+    required: true,
+    default: 1,
+    min: 1,
+    max: 9
+  }
+  title: {
     type: String,
     required: true,
+    enum: ["Casablanca", "One Flew Over The Cuckoo's Nest", "A Clockwork Orange",
+          "Wizard Of Oz", "The Godfather", "2001: A Space Odyssey",
+          "Anatomy Of A Murder", "12 Angry Men", "The Circus"
+    ]
+  },
+  year: {
+    type: Number,
+    default: 1928,
+    min: 1928,
+    max: 1975
   },
   summary: {
     type: String,
-    required: true,
+    required: true
   },
   poster: {
-    type: String,
-    required: true,
+    type: String
   },
-  frequency: [String],
-  showtimes: [String],
-  price: [String]
+  showtimes: {
+    type: [String]
+  },
+  frequency: {
+    type: String
+  },
+  genres: {
+    type: [String]
+  },
+  length: {
+    type: String
+  },
+  rating: {
+    type: String,
+  },
+  price: {
+    type: String
+  }
 });
 
+
 mongoose.model('movie', movieSchema);
+mongoose.model('movieShowTime', movieShowTimeSchema);

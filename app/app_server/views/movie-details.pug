@@ -8,7 +8,7 @@ block content
       br
       p.lead.text-white= pageHeader.tagline
       br
-      p.text-white= pageHeader.message
+      p.text-white= pageHeader.statement
     br
     br
     .container
@@ -25,7 +25,7 @@ block content
               br
               .container
                 .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  h4.card-title-text.text-warning.text-center #{movie.theater}
+                  h4.card-title-text.text-warning.text-center Playing in theater - #{movie.theaterNum}
                   p.text-justify-content-center.text-info #{movie.frequency} | #{movie.length}
                   p.text-justify-content-center.text-info= movie.genres
                   .btn-group.mr-2(role="group", aria-label="First Showtime")
