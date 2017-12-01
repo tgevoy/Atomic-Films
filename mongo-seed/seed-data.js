@@ -54,7 +54,7 @@ db.movies.save({
 });
 
 // ------------------------- movieShowTimeSchema ------------------------------
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   title: "Casablanca",
   theaterNum: 1,
   year: 1942,
@@ -68,7 +68,7 @@ db.movieShowTimes.save({
   genres: ["Drama", "Romance", "War"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 2,
   title: "One Flew Over The Cuckoo's Nest",
   year: 1975,
@@ -82,7 +82,7 @@ db.movieShowTimes.save({
   genres: ["Drama", "Psychological"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 3,
   title: "A Clockwork Orange",
   year: 1971,
@@ -96,7 +96,7 @@ db.movieShowTimes.save({
   genres: ["Drama", "Crime", "Thriller"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 4,
   title: "Wizard Of Oz",
   year: 1939,
@@ -110,7 +110,7 @@ db.movieShowTimes.save({
   genres: ["Adventure", "Fantasy", "Musical"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 5,
   title: "The Godfather",
   year: 1972,
@@ -124,7 +124,7 @@ db.movieShowTimes.save({
   genres: ["Drama", "Crime"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 6,
   title: "2001: A Space Odyssey",
   year: 1968,
@@ -138,7 +138,7 @@ db.movieShowTimes.save({
   genres: ["Adventure", "Fantasy", "Mystery", "Sci-Fi", "Thriller"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 7,
   title: "Anatomy Of A Murder",
   year: 1959,
@@ -152,7 +152,7 @@ db.movieShowTimes.save({
   genres: ["Crime", "Drama", "Law", "Mystery", "Thriller"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 8,
   title: "12 Angry Men",
   year: 1957,
@@ -166,7 +166,7 @@ db.movieShowTimes.save({
   genres: ["Crime", "Drama", "Law", "Mystery"]
 });
 
-db.movieShowTimes.save({
+db.movieShowtimes.save({
   theaterNum: 9,
   title: "The Circus",
   year: 1928,
