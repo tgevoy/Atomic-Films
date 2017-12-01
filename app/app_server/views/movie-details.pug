@@ -17,24 +17,26 @@ block content
           .card.w-100.bg-dark
             br
             .card-body.bg-dark.text-white
-              h4.card-title-text.text-warning.text-center [#{movie.id}]
               h4.card-title-text.text-warning.text-center #{movie.title} (#{movie.year})
               img.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
               br
+              p.card-text.text-justify-content-center= movie.rating
               p.card-text.text-justify-content-center= movie.summary
               br
               .container
                 .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  p.text-justify-content-center.text-info= movie.day
-                  .btn-group.mr-2(role="group", aria-label="First Show Time")
+                  h4.card-title-text.text-warning.text-center #{movie.theater}
+                  p.text-justify-content-center.text-info #{movie.frequency} | #{movie.length}
+                  p.text-justify-content-center.text-info= movie.genres
+                  .btn-group.mr-2(role="group", aria-label="First Showtime")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-success(type="button")= movie.showTimes[0]
-                  .btn-group.mr-2(role="group", aria-label="Second Show Time")
+                      button.btn.btn-success(type="button")= movie.showtimes[0]
+                  .btn-group.mr-2(role="group", aria-label="Second Showtime")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-success(type="button")= movie.showTimes[1]
-                  .btn-group.mr-2(role="group", aria-label="Third Show Time")
+                      button.btn.btn-success(type="button")= movie.showtimes[1]
+                  .btn-group.mr-2(role="group", aria-label="Third Showtime")
                     a.btn-link(href="/movies/reserve")
-                      button.btn.btn-success(type="button")= movie.showTimes[2]
+                      button.btn.btn-success(type="button")= movie.showtimes[2]
             br
           br
         br
