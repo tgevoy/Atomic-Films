@@ -15,14 +15,14 @@ block content
         each movie in movies
           .col-lg-6.col-md-6
             br
-            br
-            .card
+            .card.bg-dark
               br
               br
-              img.card-img-top.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
-              .card-body
-                h4.card-title-text.text-warning.text-center= movie.title
-                h4.card-title-text.text-warning.text-center Film ##{movie.id}
+              img.card-img-top.img-responsive.mx-auto.d-block.border.border-dark.h-100(style="width:50%" src= movie.poster)
+              br
+              .card-body.bg-light
+                h4.card-title-text.text-dark.text-center= movie.title
+                h4.card-title-text.text-dark.text-center Film ##{movie.id}
                 a.btn-link(href="/movies")
                   button.btn.btn-success(type="button")= movie.details
         

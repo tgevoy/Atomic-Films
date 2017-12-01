@@ -3,7 +3,7 @@
 
 body {
   padding-top: 1px;
-  padding-bottom: 40px;
+  padding-bottom: 1px;
   background-color: #ffffff;
 }
 
@@ -93,9 +93,11 @@ form.text {
   font-family: 'Exo', sans-serif;
 }
 
+/*
 button.btn:hover {
   background-color: #4c9a9a;
 }
+*/
 
 /************************ Footer section (ALL PAGES) **************************/
 

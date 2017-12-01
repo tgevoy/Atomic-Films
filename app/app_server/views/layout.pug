@@ -15,22 +15,22 @@ html
       .row
         .col-12.col-md-10
       //- Navbar Nav Items
-      nav.navbar.navbar-expand-md.sticky-top
+      nav.navbar.navbar-expand-lg.sticky-top
         button.navbar-toggler.bg-success(type="button", data-toggle="collapse", data-target="#collapseNavbar")
           .col-12.col-md-6
-            span.navbar-toggler-icon-text-center Menu
+            span.toggler-icon.text-center Menu
         #collapseNavbar.collapse.navbar-collapse
-          ul.nav.mx-auto
+          ul.nav.mx-auto.justify-content-center
             li.nav-item
-              a.nav-link.active.font-weight-bold.float-sm-center(href="/") Featured
+              a.nav-link.active.font-weight-bold(href="/") Featured
             li.nav-item
-              a.nav-link.active.font-weight-bold.float-sm.center(href="/movies") Details
+              a.nav-link.active.font-weight-bold(href="/movies") Details
             li.nav-item
-              a.nav-link.active.font-weight-bold.float-sm-center(href="/movies/reserve") Reserve
+              a.nav-link.active.font-weight-bold(href="/movies/reserve") Reserve
             li.nav-item
-              a.nav-link.active.font-weight-bold.float-sm-center(href="/contact") Contact
+              a.nav-link.active.font-weight-bold(href="/contact") Contact
       //- End Navbar
-      
+ 
       block content
       //- Footer Section
       footer.text-left

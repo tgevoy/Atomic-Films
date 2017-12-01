@@ -87,7 +87,7 @@ const movieDetails = function(req, res) {
       price: "$15",
       length: "2h 14m",
       rating: "9.6/10",
-      genres: ["Drama", "Psychological"]
+      genres: ["Drama", "Psychological", "Tragedy"]
     }, {
       theaterNum: 3,
       title: "A Clockwork Orange",
@@ -123,7 +123,7 @@ const movieDetails = function(req, res) {
       price: "$15",
       length: "2h 58m",
       rating: "9.7/10",
-      genres: ["Drama", "Crime"]
+      genres: ["Drama", "Crime", "Gangster"]
     }, {
       theaterNum: 6,
       title: "2001: A Space Odyssey",
