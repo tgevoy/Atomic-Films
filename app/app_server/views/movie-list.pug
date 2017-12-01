@@ -7,21 +7,55 @@ block content
       h1.jumbotron-heading-text= pageHeader.heading
       br
       p.lead.text-white= pageHeader.tagline
+      p.lead.text-white= pageHeader.statement
     br
     br
     .container
       .row.justify-content-center.bg-black
         each movie in movies
-          .col-6.col-md-4
-            .thumbnail
-              img.img-fluid.w-100(src= movie.poster)
+          .col-lg-6.col-md-6
+            br
+            br
+            .card
               br
               br
-              a.btn-link(href="/movies")
-              h4.card-title-text.text-warning.text-center [#{movie.id}]
-              h4.card-title-text.text-warning.text-center #{movie.title}
-                br
-                br
-                button.btn.btn-success(type="button")= movie.details
+              img.card-img-top.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
+              .card-body
+                h4.card-title-text.text-warning.text-center= movie.title
+                h4.card-title-text.text-warning.text-center Film ##{movie.id}
+                a.btn-link(href="/movies")
+                  button.btn.btn-success(type="button")= movie.details
+        
+//-
+  extends layout
+
+  block content
+    //- Feature Films Section
+    section.jumbotron.text-center
+      .container
+        h1.jumbotron-heading-text= pageHeader.heading
+        br
+        p.lead.text-white= pageHeader.tagline
+        p.lead.text-white= pageHeader.statement
+      br
+      br
+      .container
+        .row.justify-content-center.bg-black
+          each movie in movies
+            .col-lg-6.col-md-6
               br
-            br    
+              br
+              .card-mt-2.bg-dark
+                .thumbnail
+                  br
+                  br
+                  h4.card-title-text.text-warning.text-center #{movie.title}
+                  img.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
+                  br
+                  h4.card-title-text.text-warning.text-center Film ##{movie.id}
+                    br
+                    br
+                    a.btn-link(href="/movies")
+                      button.btn.btn-success(type="button")= movie.details
+                    br
+                  br    

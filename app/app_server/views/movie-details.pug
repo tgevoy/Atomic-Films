@@ -20,14 +20,15 @@ block content
               h4.card-title-text.text-warning.text-center #{movie.title} (#{movie.year})
               img.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
               br
-              p.card-text.text-justify-content-center= movie.rating
+              h4.card-title-text.text-warning.text-center= movie.rating
+              br
               p.card-text.text-justify-content-center= movie.summary
               br
+              p.text-justify-content-center.text-info= movie.genres
               .container
                 .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+                  p.text-justify-content-center.text-info #{movie.frequency} // #{movie.length}
                   h4.card-title-text.text-warning.text-center Playing in theater - #{movie.theaterNum}
-                  p.text-justify-content-center.text-info #{movie.frequency} | #{movie.length}
-                  p.text-justify-content-center.text-info= movie.genres
                   .btn-group.mr-2(role="group", aria-label="First Showtime")
                     a.btn-link(href="/movies/reserve")
                       button.btn.btn-success(type="button")= movie.showtimes[0]
