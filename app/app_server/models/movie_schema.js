@@ -1,6 +1,5 @@
 const mongoose = require('mongoose');
 
-// For movies-list home page
 const movieSchema = new mongoose.Schema({
   id: {
     type: Number,
@@ -20,7 +19,7 @@ const movieSchema = new mongoose.Schema({
   }
 });
 
-// For movie-details page
+
 const movieShowtimeSchema = new mongoose.Schema({
   theaterNum: {
     type: Number,
@@ -28,7 +27,7 @@ const movieShowtimeSchema = new mongoose.Schema({
     default: 1,
     min: 1,
     max: 9
-  }
+  },
   title: {
     type: String,
     required: true,
@@ -62,7 +61,7 @@ const movieShowtimeSchema = new mongoose.Schema({
     type: String
   },
   rating: {
-    type: String,
+    type: String
   },
   price: {
     type: String
