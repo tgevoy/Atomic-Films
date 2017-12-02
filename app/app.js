@@ -10,7 +10,7 @@ var bodyParser = require('body-parser');
 require('./app_server/models/db');  // Executes code in the db.js file
 
 const appRouter = require('./app_server/routes/app_router'); // Router to handle all Application page Requests (Lab 6 Task 4 Part 3)
-//const apiRouter = require('./app_api/routes/api_router');  // Router to handle all API Requests (Lab 11 Task 2)
+const apiRouter = require('./app_api/routes/api_router');  // Router to handle all API Requests (Lab 11 Task 2)
 
 var app = express();
 
@@ -27,7 +27,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', appRouter); // Route every page Request of the Application (Lab 6 Task 4 Part 3)
-//app.use('/api', apiRouter); // This directs the API Request for Express to the API Router (Lab 11 Task 2 Part 3)
+app.use('/api', apiRouter); // This directs the API Request for Express to the API Router (Lab 11 Task 2 Part 3)
 
 
 // Catch 404 and forward to error handler
