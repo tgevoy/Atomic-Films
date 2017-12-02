@@ -13,29 +13,33 @@ block content
     br
     .container
       each movie in movies
-        .card.bg-dark
+        .card.mw-100.mh-75#movieCard
           br
-          .card-body.bg-dark.text-white
-            h4.card-title-text.text-warning.text-center #{movie.title} || #{movie.length}
-            h4.card-title-text.text-warning.text-center (#{movie.year})
-            img.img-responsive.mx-auto.d-block.border.border-dark(width="40%", src= movie.poster)
-            br
-            h4.card-title-text.text-warning.text-center Rating: #{movie.rating}
-            span.badge.badge-success.text-justify-content-center.text-dark.font-italic #{movie.genres[0]} || #{movie.genres[1]} || #{movie.genres[2]}
-            br
-            br
-            p.card-text.text-justify-content-center= movie.summary
-            .container
-              .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                h4.card-title-text.text-warning.text-center #{movie.frequency} in Theater ##{movie.theaterNum}
-                .btn-group.mr-2(role="group", aria-label="First Showtime")
-                  a.btn-link(href="/movies/reserve")
-                    button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
-                .btn-group.mr-2(role="group", aria-label="Second Showtime")
-                  a.btn-link(href="/movies/reserve")
-                    button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
-                .btn-group.mr-2(role="group", aria-label="Third Showtime")
-                  a.btn-link(href="/movies/reserve")
-                    button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
-        br
-        br
+          .card-body.bg-light.text-white
+            .card-block.bg-dark
+              br
+              h3.card-title-text.text-warning.text-center= movie.title
+              h4.card-title-text.text-warning.text-center= (movie.year)
+              img.img-fluid.mx-auto.d-block.border.border-dark(width="40%", src= movie.poster)
+              br
+              h4.card-title-text.text-warning.text-center= movie.length
+              h4.card-title-text.text-warning.text-center Rating: #{movie.rating}
+              span.badge.badge-success.text-justify-content-center.text-dark.font-italic #{movie.genres[0]} || #{movie.genres[1]} || #{movie.genres[2]}
+              br
+              br
+              p.card-text.text-justify-content-center= movie.summary
+              .container
+                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+                  h4.card-title-text.text-warning.text-center #{movie.frequency} in Theater ##{movie.theaterNum}
+                  .btn-group.mr-2(role="group", aria-label="First Showtime")
+                    a.btn-link(href="/movies/reserve")
+                      button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
+                  .btn-group.mr-2(role="group", aria-label="Second Showtime")
+                    a.btn-link(href="/movies/reserve")
+                      button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
+                  .btn-group.mr-2(role="group", aria-label="Third Showtime")
+                    a.btn-link(href="/movies/reserve")
+                      button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
+              br
+              br
+          br

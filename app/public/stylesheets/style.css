@@ -4,7 +4,7 @@
 body {
   padding-top: 1px;
   padding-bottom: 1px;
-  background-color: #ffffff;
+  background-color: #dedede;
 }
 
 /******************** Atomic-Films brand section (ALL PAGES) *********************/
@@ -13,12 +13,9 @@ body {
   font-family: 'Megrim', sans-serif;
   font-size: 4rem;
   font-weight: bolder;
-  color: #b57700;
-  padding-top: 2px;
-}
-
-.af-brand {
-  background-color: #ffffff;
+  color: #b27500;
+  padding-top: 40px;
+  padding-bottom: -12px;
 }
 
 p.af-header-font {
@@ -31,18 +28,21 @@ p.af-header-font {
 
 nav.navbar {
   background-color: #027091;
-  padding-bottom: 2px;
-  padding-top: 2px;
+  color: #ffffff;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 #collapseNavbar li.nav-item a {
-  color: #bf7d00;
+  /*color: #bf7d00;*/
+  color: #00080a;
   font-family: 'Bungee Hairline', sans-serif;
   font-size: 1.5rem;
+  font-weight: bold;
 }
 
 #collapseNavbar li.nav-item a:hover {
-  color: #ffffff;
+  color: #cecece;
 }
 
 #collapseNavbar li.nav-item a:active {
@@ -52,11 +52,11 @@ nav.navbar {
 li {
   display: inline-block;
 }
-
+/*
 button.navbar:hover {
   background-color: #b57700;
 }
-
+*/
 /***************** Movies Page (MOVIE-LIST) *****************/
 
 section.jumbotron {
@@ -64,6 +64,11 @@ section.jumbotron {
 }
 
 /***************** Synopsis Page (MOVIE-DETAILS) ****************/
+h3.card-title-text {
+  font-family: 'Teko', sans-serif;
+  font-weight: bold;
+  color: #0b4d88;
+}
 
 h4.card-title-text {
   font-family: 'Teko', sans-serif;
@@ -73,14 +78,22 @@ h4.card-title-text {
 
 h1.jumbotron-heading-text {
   color: #bf7d00;
-  font-family: 'Anton', sans-serif;
+  font-family: 'Teko', sans-serif;
 }
 
 p.card-text {
   font-family: 'Exo', sans-serif;
 }
 
+#movieCard {
+  background-color: black;
+}
+
+
 /****************** Reserve Page (RESERVE-MOVIE) *******************/
+
+
+
 
 /****************** Contact Page (CONTACT) *******************/
 
@@ -93,11 +106,6 @@ form.text {
   font-family: 'Exo', sans-serif;
 }
 
-/*
-button.btn:hover {
-  background-color: #4c9a9a;
-}
-*/
 
 /************************ Footer section (ALL PAGES) **************************/
 
@@ -105,18 +113,8 @@ footer {
   background-color: #027091;
 }
 
-footer a {
-  color: #bf7d00;
-  font-size: 1rem;
-  text-decoration: none !important;
-}
-
-footer a:hover {
-  color: #ffffff;
-}
-
 p.af-footer-text {
   font-family: 'Bungee Hairline', sans-serif;
-  color: #bf7d00;
-  font-size: 1.25rem;
+  color: #000000;
+  font-size: 1.5rem;
 }

@@ -15,12 +15,12 @@ const movieList = function(req, res) {
       details: "Info"
     }, {
       id: 2,
-      title: "One Flew Over The Cuckoos Nest",
+      title: "One Flew Over The Cuckoo's Nest",
       poster: "/images/mp2.jpg",
       details: "Info"
     }, {
       id: 3,
-      title: "A clockwork Orange",
+      title: "A Clockwork Orange",
       poster: "/images/mp3.jpg",
       details: "Info"
     }, {
