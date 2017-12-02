@@ -19,6 +19,8 @@ const movieSchema = new mongoose.Schema({
   }
 });
 
+mongoose.model('movie', movieSchema);
+
 
 const movieShowtimeSchema = new mongoose.Schema({
   theaterNum: {
@@ -68,6 +70,4 @@ const movieShowtimeSchema = new mongoose.Schema({
   }
 });
 
-
-mongoose.model('movie', movieSchema);
 mongoose.model('movieShowtime', movieShowtimeSchema);

@@ -6,7 +6,9 @@ let dbURI = 'mongodb://mongo/atomic-films'; /* Database connection string */
 if (process.env.NODE_ENV === 'production') {
   dbURI = process.env.MONGO_URL;
 }
-mongoose.connect(dbURI, { useMongoClient: true });
+mongoose.connect(dbURI, {
+  useMongoClient: true
+});
 
 mongoose.connection.on('connected', function() {
   console.log('Mongoose connected to ' + dbURI);

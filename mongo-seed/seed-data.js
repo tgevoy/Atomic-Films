@@ -2,55 +2,55 @@
 db.movies.save({
   id: 1,
   title: "Casablanca",
-  poster: "/images/mp1.jpg",
+  poster: "/images/mp1.jpg"
 });
 
 db.movies.save({
   id: 2,
-  title: "One Flew Over The Cuckoos Nest",
-  poster: "/images/mp2.jpg",
+  title: "One Flew Over The Cuckoo's Nest",
+  poster: "/images/mp2.jpg"
 });
 
 db.movies.save({
   id: 3,
-  title: "A clockwork Orange",
-  poster: "/images/mp3.jpg",
+  title: "A Clockwork Orange",
+  poster: "/images/mp3.jpg"
 });
 
 db.movies.save({
   id: 4,
   title: "Wizard Of Oz",
-  poster: "/images/mp4.jpg",
+  poster: "/images/mp4.jpg"
 });
 
 db.movies.save({
   id: 5,
   title: "The Godfather",
-  poster: "/images/mp5.jpg",
+  poster: "/images/mp5.jpg"
 });
 
 db.movies.save({
   id: 6,
   title: "2001: A Space Odyssey",
-  poster: "/images/mp6.jpg",
+  poster: "/images/mp6.jpg"
 });
 
 db.movies.save({
   id: 7,
   title: "Anatomy Of A Murder",
-  poster: "/images/mp11.jpg",
+  poster: "/images/mp11.jpg"
 });
 
 db.movies.save({
   id: 8,
   title: "12 Angry Men",
-  poster: "/images/mp12.jpg",
+  poster: "/images/mp12.jpg"
 });
 
 db.movies.save({
   id: 9,
   title: "The Circus",
-  poster: "/images/mp9.jpg",
+  poster: "/images/mp9.jpg"
 });
 
 
