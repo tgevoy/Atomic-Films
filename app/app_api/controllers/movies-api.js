@@ -20,7 +20,7 @@ const movieDetailsByGenres =  function(req, res) {
 
 };
 
-const moviesReadOne = function(req, res) {};
+
 const moviesCreate = function(req, res) {};
 const moviesDelete = function(req, res) {};
 
