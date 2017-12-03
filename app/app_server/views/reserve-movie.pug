@@ -1,13 +1,13 @@
 extends layout
 
 block content
-  section.jumbotron.text-center
+  section.jumbotron.text-center.bg-success
     .container
-      h1.jumbotron-heading-text= pageHeader.heading
+      h1.jumbotron-heading-text= pageTitle
       br
-      p.lead.text-white= pageHeader.tagline
-    .card
-      .card-body.bg-dark
-        h4.card-title-text.pb-5.text-justify= pageHeader.acknowledge
+      p.lead.text-justify= pageHeader.message
+    //.card
+      //.card-body.bg-dark
+        //h4.card-title-text.pb-5.text-justify
     br
     br

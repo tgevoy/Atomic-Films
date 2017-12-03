@@ -3,34 +3,34 @@ extends layout
 block content
   section.jumbotron.text-center
     .container
-      h1.jumbotron-heading-text= pageHeader.heading
+      h1.jumbotron-heading-text= pageTitle
       br
-      p.lead.text-white= pageHeader.tagline
+      p.lead.text-white.text-justify= pageHeader.message
     br
     .card
       .card-body.bg-dark
         //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
-        form(name="contact", action="/thanks", method="post") 
+        form(name="contact", action="/thanks", method="post")
           .form-group.row
             label.col-form-label.col-sm-2.text-white(for="email") Email:
-            .col-sm-6
+            .col-md-6
               input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
           .form-group.row
             label.col-form-label.col-sm-2.text-white(for="name") Name:
-            .col-sm-6
+            .col-md-6
               input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
           .form-group.row
             label.col-form-label.col-sm-2.text-white(for="message") Message:
-            .col-sm-10
+            .col-md-10
               textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
           .form-group.row
             label.col-form-label.col-sm-2
-            .col-sm-6
+            .col-md-6
               button.btn.btn-info.float-left(type="submit") Send Message
-              
-              
-              
-              
+
+
+
+
     //-
       block content
         section.jumbotron.text-center
@@ -41,7 +41,7 @@ block content
           .card
             .card-body.bg-dark
               //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
-              form(name="contact", action="/thanks", method="post") 
+              form(name="contact", action="/thanks", method="post")
                 .form-group.row
                   label.col-form-label.col-sm-2.text-white(for="email") Email:
                   .col-sm-6

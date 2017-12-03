@@ -1,29 +1,22 @@
 const mongoose = require('mongoose');
 
 const movieSchema = new mongoose.Schema({
-  id: {
-    type: Number,
-    default: 1,
-    min: 1,
-    max: 9
-  },
   title: {
     type: String,
     required: true,
-    enum: ["Casablanca", "One Flew Over The Cuckoo's Nest", "A Clockwork Orange",
-          "Wizard Of Oz", "The Godfather", "2001: A Space Odyssey",
-          "Anatomy Of A Murder", "12 Angry Men", "The Circus"]
+    enum: ["12 Angry Men", "2001: A Space Odyssey", "A Clockwork Orange",
+          "Anatomy Of A Murder", "Casablanca", "One Flew Over The Cuckoo's Nest",
+          "The Godfather", "The Circus"]
   },
-  poster: {
-    type: String
-  }
+  days: [String],
+  details: [String]
 });
 
 mongoose.model('movie', movieSchema);
 
 
 const movieShowtimeSchema = new mongoose.Schema({
-  theaterNum: {
+  theater: {
     type: Number,
     required: true,
     default: 1,
@@ -33,9 +26,9 @@ const movieShowtimeSchema = new mongoose.Schema({
   title: {
     type: String,
     required: true,
-    enum: ["Casablanca", "One Flew Over The Cuckoo's Nest", "A Clockwork Orange",
-          "Wizard Of Oz", "The Godfather", "2001: A Space Odyssey",
-          "Anatomy Of A Murder", "12 Angry Men", "The Circus"]
+    enum: ["12 Angry Men", "2001: A Space Odyssey", "A Clockwork Orange",
+          "Anatomy Of A Murder", "Casablanca", "One Flew Over The Cuckoo's Nest",
+          "The Godfather", "The Circus"]
   },
   year: {
     type: Number,

@@ -1,13 +1,76 @@
 extends layout
 
 block content
-  //- Feature Films Section
+
+  .container
+    .row.py-3
+      h1.pl-3.af-header-font= pageTitle
+      p.lead.pl-4.pt-2.af-header-font= pageHeader.brandMotto
+    .row
+      h3.pl-3 Choose a movie:
+    .row
+      .col-12.col-md-8
+        each movie in movies
+          .card.mt-2
+            .card-body.bg-light
+              h4.card-title.text-primary= movie.title
+              h6.card-subtitle.text-muted.pt-1= movie.days 
+              a.card-link.btn.btn-success.float-right(href='/movies')= movie.details
+      .col-12.col-md-4
+        p.lead.pl-4.pt-5.af-header-font.af-sb-color= pageHeader.brandMessage
+  br
+  br        
+
+
+//-
+  .container
+    .row.py-3
+      h1.pl-3.af-header-font Atomic Films
+      p.lead.pl-4.pt-2.af-header-font Enjoy the classics of yesterday, today!
+    .row
+      h3.pl-3 Choose a movie:
+    .row
+      .col-12.col-md-8
+        .card.mt-2
+          .card-body
+            h4.card-title 12 Angry Men
+            h6.card-subtitle.text-muted.pt-1.float-left Daily Showings 
+            a.card-link.btn.btn-primary.float-right(href='/movie') Info
+        .card.mt-2
+          .card-body
+            h4.card-title 2001: A Space Odyssey
+            h6.card-subtitle.text-muted.pt-1.float-left Daily Showings
+            a.card-link.btn.btn-primary.float-right(href='/movie') Info
+        .card.mt-2
+          .card-body
+            h4.card-title A Clockwork Orange
+            h6.card-subtitle.text-muted.pt-1.float-left Monday  
+            h6.card-subtitle.text-muted.pt-1.float-left Tuesday  
+            h6.card-subtitle.text-muted.pt-1.float-left Friday  
+            h6.card-subtitle.text-muted.pt-1.float-left Sunday  
+            a.card-link.btn.btn-primary.float-right(href='/movie') Info
+        .card.mt-2
+          .card-body
+            h4.card-title Anatomy Of A Murder
+            h6.card-subtitle.text-muted.pt-1.float-left Monday  
+            h6.card-subtitle.text-muted.pt-1.float-left Wednesday  
+            h6.card-subtitle.text-muted.pt-1.float-left Saturday  
+            h6.card-subtitle.text-muted.pt-1.float-left Sunday  
+            a.card-link.btn.btn-primary.float-right(href='/movie') Info
+      .col-12.col-md-4
+        p.lead.pl-4.pt-5.af-header-font.af-sb-color
+          | Atomic Films has several movies to choose from. We strive to satisfy our customers and provide a comfortable environment, with state of the art equipment, for all your movie entertainment night!
+      
+
+
+//- 
+  --------------------------COPY OF MY ORIGINAL MOVIE-LIST PAGE----------- keeeeeeeeeeeep!!!!
   section.jumbotron.text-center
     .container
-      h1.jumbotron-heading-text= pageHeader.heading
+      h1.jumbotron-heading-text= pageTitle
       br
-      p.lead.text-white= pageHeader.tagline
-      p.lead.text-white= pageHeader.statement
+      p.lead.text-white= pageHeader.motto
+      p.lead.text-white= pageHeader.message
       br
       br
       .container
@@ -17,11 +80,11 @@ block content
               br
               .card.mw-100.mh-75.bg-dark
                 br
-                h3.card-title-text.text-warning.text-center= movie.title
+                h2.card-title-text.text-warning.text-center= movie.title
                 img.img-responsive.mx-auto.d-block(style="width:40%" src= movie.poster)
                 br
-                h4.card-title-text.text-warning.text-center Film ##{movie.id}
+                h3.card-title-text.text-warning.text-center= movie.schedule
                 a.btn-link(href="/movies")
                   button.btn.btn-success(type="button")= movie.details
                   br
-                br 
+                br

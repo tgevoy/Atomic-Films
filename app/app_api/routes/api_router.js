@@ -10,7 +10,8 @@ const moviesAPIController = require('../controllers/movies-api');
 const showtimesAPIController = require('../controllers/showtimes-api');
 
 // Defining API Routes and setting up the Controllers (Lab 11 Task 3 Part 1)
-/* -- movies -- */
+
+/* -- movie details-- */
 router
   .route('/movies') // This calls router.route() and passes in the path you want to apply HTTP verbs to
   .get(moviesAPIController.movieDetailsByTitle) // List all movies by title

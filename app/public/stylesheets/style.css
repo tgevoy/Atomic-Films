@@ -1,120 +1,67 @@
-@import url("https://fonts.googleapis.com/css?family=Anton|Bungee+Hairline|Bungee+Outline|Exo|Megrim|Rajdhani|Quicksand|Teko");
-/********************* Body section (ALL PAGES) ***********************/
+@import url("https://fonts.googleapis.com/css?family=Exo|Megrim|Orbitron|Teko");
+/* default font for the AF App */
 
 body {
-  padding-top: 1px;
-  padding-bottom: 1px;
-  background-color: #dedede;
+  font-family: 'Teko', sans-serif;
+  /* for the fixed footer not to overlap content */
+  padding-bottom: 40px;
+  background-color: #000;
 }
 
-/******************** Atomic-Films brand section (ALL PAGES) *********************/
+/* Atomic Films header font */
 
-.atomicFilms-brand-text {
+.af-header-font {
+  font-family: 'Exo', cursive;
+}
+
+/* --------------- layout.pug CSS -------------- */
+
+.af-atomicfilms-color {
+  background-color:
+}
+
+.brand-text {
   font-family: 'Megrim', sans-serif;
-  font-size: 4rem;
-  font-weight: bolder;
-  color: #b27500;
-  padding-top: 40px;
-  padding-bottom: -12px;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #DAA520;
 }
 
-p.af-header-font {
-  color: #dba133;
-  font-family: 'Exo', sans-serif;
-  font-size: 18px;
-}
-
-/******************** Navbar section (ALL PAGES) **********************/
-
-nav.navbar {
-  background-color: #027091;
-  color: #ffffff;
-  padding-bottom: 10px;
-  padding-top: 5px;
-}
-
-#collapseNavbar li.nav-item a {
-  /*color: #bf7d00;*/
-  color: #00080a;
-  font-family: 'Bungee Hairline', sans-serif;
+a.nav-link {
   font-size: 1.5rem;
-  font-weight: bold;
+  color: #fff;
 }
 
-#collapseNavbar li.nav-item a:hover {
-  color: #cecece;
+i.fa-film {
+  padding: 8px 0px 0px 8px;
+  color: #000;
 }
 
-#collapseNavbar li.nav-item a:active {
-  color: #0287af;
-}
-
-li {
-  display: inline-block;
-}
-/*
-button.navbar:hover {
-  background-color: #b57700;
-}
-*/
-/***************** Movies Page (MOVIE-LIST) *****************/
-
-section.jumbotron {
-  background-color: #000000;
-}
-
-/***************** Synopsis Page (MOVIE-DETAILS) ****************/
-h3.card-title-text {
-  font-family: 'Teko', sans-serif;
-  font-weight: bold;
-  color: #0b4d88;
-}
-
-h4.card-title-text {
-  font-family: 'Teko', sans-serif;
+.af-footer-text {
+  font-family: 'Orbitron', cursive;
   font-size: 1rem;
-  font-weight: bold;
+  color: goldenrod;
+  padding: 10px 15px 10px 0px;
 }
 
-h1.jumbotron-heading-text {
-  color: #bf7d00;
-  font-family: 'Teko', sans-serif;
+/* --------------- movie-list.pug CSS -------------- */
+
+.af-sb-color {
+  color: #3181BF;
+}
+
+/* --------------- movie-details.pug CSS -------------- */
+
+p.lead {
+  color: firebrick;
+  font-size: 1.5rem;
 }
 
 p.card-text {
-  font-family: 'Exo', sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
 }
 
 #movieCard {
-  background-color: black;
-}
-
-
-/****************** Reserve Page (RESERVE-MOVIE) *******************/
-
-
-
-
-/****************** Contact Page (CONTACT) *******************/
-
-h4.card-title-text {
-  color: #bf7d00;
-  font-family: 'Exo', sans-serif;
-}
-
-form.text {
-  font-family: 'Exo', sans-serif;
-}
-
-
-/************************ Footer section (ALL PAGES) **************************/
-
-footer {
-  background-color: #027091;
-}
-
-p.af-footer-text {
-  font-family: 'Bungee Hairline', sans-serif;
-  color: #000000;
-  font-size: 1.5rem;
+  background-color: #000;
 }
