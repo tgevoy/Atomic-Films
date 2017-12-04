@@ -1,34 +1,45 @@
-@import url("https://fonts.googleapis.com/css?family=Exo|Megrim|Orbitron|Teko");
+@import url("https://fonts.googleapis.com/css?family=Abel|Anton|Audiowide|Barlow|Cabin+Condensed|Dosis|Exo|Megrim|Orbitron|Ranchers|Teko");
 /* default font for the AF App */
 
 body {
-  font-family: 'Teko', sans-serif;
+  font-family: 'Barlow', sans-serif;
   /* for the fixed footer not to overlap content */
   padding-bottom: 40px;
-  background-color: #000;
+  background-color: #fff;
+  font-size: 1.5rem;
 }
 
 /* Atomic Films header font */
 
 .af-header-font {
-  font-family: 'Exo', cursive;
+  font-family: 'Barlow', sans-serif;
+  color: #000;
+}
+
+/* Atomic Films motto font */
+
+.af-motto-font p {
+  font-family: 'Anton', sans-serif;
+  font-size: 10px;
 }
 
 /* --------------- layout.pug CSS -------------- */
 
-.af-atomicfilms-color {
-  background-color:
+.bg-atomicfilms-color {
+  background-color: #347C98;
 }
 
 .brand-text {
-  font-family: 'Megrim', sans-serif;
+  font-family: 'Audiowide', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
-  color: #DAA520;
+  color: goldenrod;
+  /*#DAA520;*/
 }
 
 a.nav-link {
   font-size: 1.5rem;
+  font-family: 'Dosis', sans-serif;
   color: #fff;
 }
 
@@ -38,7 +49,7 @@ i.fa-film {
 }
 
 .af-footer-text {
-  font-family: 'Orbitron', cursive;
+  font-family: 'Dosis', sans-serif;
   font-size: 1rem;
   color: goldenrod;
   padding: 10px 15px 10px 0px;
@@ -48,6 +59,10 @@ i.fa-film {
 
 .af-sb-color {
   color: #3181BF;
+}
+
+.bg-af-card-color {
+  background-color: #4EA288;
 }
 
 /* --------------- movie-details.pug CSS -------------- */

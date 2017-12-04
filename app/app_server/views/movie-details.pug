@@ -9,35 +9,117 @@ block content
       p.lead.text-justify= pageHeader.message
     br
     br
-    .container
-      each movie in movies
-        .card.mw-100.mh-75#movieCard
-          br
-          .card-body.bg-light.text-white
-            .card-block.bg-dark
+  each movie in movies 
+    .container.bg-dark
+      .row.py-3
+        h1.pl-3.af-header-font= movie.title
+      .row
+        .col-12.col-md-8
+          img.img-fluid.border.border-dark.mx-auto.d-block(width="25%", height="50%", src= movie.poster)
+      .row.bg-light
+        .col-12.col-md-8.bg-success
+          .card-body.mr-auto.bg-warning
+            form(name="details", action="", method="get")
+              .row
+                .form-group.col-sml-6.pr-5
+                  label.col-form-label(for="showtime") #{movie.frequency} in AF-Theater #{movie.theaterNum}
+              .row.pt-4.pr-5.pl-3.bg-danger
+                table.table.table-striped.table-dark
+                  thead 
+                    tr
+                      th(scope="col") Title
+                      th(scope="col") Year
+                      th(scope="col") Length
+                      th(scope="col") Rating 
+                      th(scope="col") Genres 
+                      th(scope="col") Select
+                  tbody
+                    tr
+                      td= movie.title
+                      td= movie.year 
+                      td= movie.length 
+                      td= movie.rating 
+                      td= movie.genres
+                      td
+                        input#select-movie(type="radio", name="select-movie", value="")
               br
-              h2.card-title-text.text-warning.text-center= movie.title
-              h3.card-title-text.text-warning.text-center= (movie.year)
-              img.img-fluid.mx-auto.d-block.border.border-dark(width="40%", src= movie.poster)
-              br
-              h3.card-title-text.text-warning.text-center= movie.length
-              h3.card-title-text.text-warning.text-center Rating: #{movie.rating}
-              span.badge.badge-success.text-justify-content-center.text-dark.font-italic #{movie.genres[0]} || #{movie.genres[1]} || #{movie.genres[2]}
-              br
-              br
-              p.card-text.text-justify-content-center= movie.summary
-              .container
-                .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                  h3.card-title-text.text-warning.text-center #{movie.frequency} in Theater ##{movie.theaterNum}
-                  .btn-group.mr-2(role="group", aria-label="First Showtime")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
-                  .btn-group.mr-2(role="group", aria-label="Second Showtime")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
-                  .btn-group.mr-2(role="group", aria-label="Third Showtime")
-                    a.btn-link(href="/movies/reserve")
-                      button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
-              br
-              br
-          br
+              .row 
+                .col-12
+                  .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+                    p= movie.summary
+                    //h3.card-title-text.text-warning.text-center what could go here?
+                    .btn-group.mr-2(role="group", aria-label="First Showtime")
+                      a.btn-link(href="/movies/reserve")
+                        button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
+                    .btn-group.mr-2(role="group", aria-label="Second Showtime")
+                      a.btn-link(href="/movies/reserve")
+                        button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
+                    .btn-group.mr-2(role="group", aria-label="Third Showtime")
+                      a.btn-link(href="/movies/reserve")
+                        button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
+                  button.btn.btn-success.float-right(type="submit") Next
+        
+        br
+        br
+//-                    
+    each movie in movies
+      img.img-fluid.mr-auto.d-block.border.border-dark(width="25%", src= movie.poster)
+      .container
+        h2.text-warning Hoverable Dark Table
+        p.text-light
+          | Find all information about a movie here:
+        table.table.table-dark.table-hover.bg-light
+          thead
+            tr
+              th Title
+              th Year
+              th Length 
+              th Rating
+              th Price
+          tbody
+            tr
+              td= movie.title
+              td= movie.year
+              td= movie.length
+              td= movie.rating 
+              td= movie.price
+            tr
+              td Mary
+              td Moe
+              td mary@example.com
+            tr
+              td July
+              td Dooley
+              td july@example.com
+    //-
+      .card.mw-25#movieCard
+        br
+        
+      .card-body.mw-50.bg-light.text-white
+      .card-block.ml-auto.bg-dark
+        br
+        h2.card-title-text.text-warning.text-center= movie.title
+        h3.card-title-text.text-warning.text-center= (movie.year)
+        
+        br
+        h3.card-title-text.text-warning.text-center= movie.length
+        h3.card-title-text.text-warning.text-center Rating: #{movie.rating}
+        span.badge.badge-success.text-justify-content-center.text-dark.font-italic #{movie.genres[0]} || #{movie.genres[1]} || #{movie.genres[2]}
+        br
+        br
+        p.card-text.text-justify-content-center= movie.summary
+        .container
+          .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+            h3.card-title-text.text-warning.text-center #{movie.frequency} in Theater ##{movie.theaterNum}
+            .btn-group.mr-2(role="group", aria-label="First Showtime")
+              a.btn-link(href="/movies/reserve")
+                button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
+            .btn-group.mr-2(role="group", aria-label="Second Showtime")
+              a.btn-link(href="/movies/reserve")
+                button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
+            .btn-group.mr-2(role="group", aria-label="Third Showtime")
+              a.btn-link(href="/movies/reserve")
+                button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
+        br
+        br
+    

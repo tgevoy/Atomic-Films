@@ -9,24 +9,25 @@ html
     link(rel="stylesheet", href="/stylesheets/style.css")
 
   body
-    nav.navbar.navbar-expand-md.navbar-dark.bg-light
+    nav.navbar.navbar-expand-md.navbar-dark.bg-atomicfilms-color
       .container-fluid
-        a.navbar-brand(href='/')
+        a.navbar-brand(href="/")
           .brand-text.float-left Atomic Films
-            i.fa.fa-film.fa-sm(aria-hidden='true')
-        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#mainNavBar')
+            i.fa.fa-film.fa-sm(aria-hidden="true")
+        button.navbar-toggler(type="button", data-toggle="collapse", data-target="#mainNavBar")
           span.navbar-toggler-icon
         #mainNavBar.collapse.navbar-collapse
           ul.navbar-nav.ml-auto
             li.nav-item
-              a.nav-link.text-dark(href='/about') About AF
+              a.nav-link.text-dark(href="/contact") Contact AF
+    p.lead.pl-5.pt-2.af-motto-font= pageHeader.brandMotto
     br
     br
     
     block content
     //- Footer Section
     footer.fixed-bottom.bg-atomicfilms-color.text-right
-      .container-fluid.bg-light
+      .container-fluid
         .af-footer-text 2017 &copy; Atomic Films
 
     script(src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous")

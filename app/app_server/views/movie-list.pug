@@ -3,21 +3,24 @@ extends layout
 block content
 
   .container
-    .row.py-3
+    //.row.py-3
+  
+    .row
+      //h3.pl-3 Choose a movie:
       h1.pl-3.af-header-font= pageTitle
-      p.lead.pl-4.pt-2.af-header-font= pageHeader.brandMotto
-    .row
-      h3.pl-3 Choose a movie:
-    .row
+    .row.bg-af-card-color
       .col-12.col-md-8
+        br
         each movie in movies
           .card.mt-2
             .card-body.bg-light
               h4.card-title.text-primary= movie.title
               h6.card-subtitle.text-muted.pt-1= movie.days 
               a.card-link.btn.btn-success.float-right(href='/movies')= movie.details
+          br
       .col-12.col-md-4
         p.lead.pl-4.pt-5.af-header-font.af-sb-color= pageHeader.brandMessage
+        br
   br
   br        
 
