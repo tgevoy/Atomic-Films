@@ -62,7 +62,7 @@ const movieDetails = function(req, res) {
       price: "$10",
       length: "1h 36m",
       rating: "9.7/10",
-      genres: ["Crime", " Drama", " Law", " Mystery"],
+      genres: ["Crime", " Drama", " Law"],
       format: "B/W"
     }, {
       theater: 2,
@@ -88,7 +88,7 @@ const movieDetails = function(req, res) {
       price: "$12",
       length: "2h 17m",
       rating: "9.3/10",
-      genres: ["Drama", " Crime", " Thriller"],
+      genres: ["Crime", " Drama", " Thriller"],
       format: "Standard HD"
     }, {
       theater: 4,
@@ -101,7 +101,7 @@ const movieDetails = function(req, res) {
       price: "$10",
       length: "2h 41m",
       rating: "9.1/10",
-      genres: ["Crime", " Drama", " Law", " Mystery"],
+      genres: ["Crime", " Drama", " Law"],
       format: "B/W"
     }, {
       title: "Casablanca",
