@@ -14,7 +14,6 @@ const movieSchema = new mongoose.Schema({
 
 mongoose.model('movie', movieSchema);
 
-
 const movieShowtimeSchema = new mongoose.Schema({
   theater: {
     type: Number,
@@ -59,6 +58,9 @@ const movieShowtimeSchema = new mongoose.Schema({
     type: String
   },
   price: {
+    type: String
+  },
+  format: {
     type: String
   }
 });

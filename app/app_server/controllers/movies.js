@@ -6,54 +6,38 @@ const movieList = function(req, res) {
     pageTitle: "Feature Films",
     pageHeader: {
       brandMotto: "...enjoy the classics of yesterday, today!",
-      brandMessage: "Our current feature films are some of Hollywood's best and most talked about creations. Select the button below a film to find out more details."
+      brandMessage: "Our current feature films are some of Hollywood's best and most talked about creations. Select a movie to find out more details."
 		},
     movies: [{
       title: "12 Angry Men",
-      poster: "/images/mp12.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "2001: A Space Odyssey",
-      poster: "/images/mp6.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "A Clockwork Orange",
-      poster: "/images/mp3.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "Anatomy Of A Murder",
-      poster: "/images/mp11.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "Casablanca",
-      poster: "/images/mp1.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "One Flew Over The Cuckoo's Nest",
-      poster: "/images/mp2.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "The Circus",
-      poster: "/images/mp9.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }, {
       title: "The Godfather",
-      poster: "/images/mp5.jpg",
-      format: "Standard HD",
       days: ["Daily"],
       details: ["Info"]
     }]
@@ -75,10 +59,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp12.jpg",
       frequency: "Daily Showings",
       showtimes: ["11:45 A.M.", "5:30 P.M.", "8:15 P.M."],
-      price: "$15",
+      price: "$10",
       length: "1h 36m",
       rating: "9.7/10",
-      genres: ["Crime", "Drama", "Law", "Mystery"]
+      genres: ["Crime", " Drama", " Law", " Mystery"],
+      format: "B/W"
     }, {
       theater: 2,
       title: "2001: A Space Odyssey",
@@ -90,7 +75,8 @@ const movieDetails = function(req, res) {
       price: "$15",
       length: "2h 41m",
       rating: "8.9/10",
-      genres: ["Adventure", "Fantasy", "Mystery", "Sci-Fi", "Thriller"]
+      genres: ["Adventure", " Mystery", " Sci-Fi"],
+      format: "3D"
     }, {
       theater: 3,
       title: "A Clockwork Orange",
@@ -99,10 +85,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp3.jpg",
       frequency: "Daily Showings",
       showtimes: ["10:30 A.M.", "3:00 P.M.", "6:45 P.M."],
-      price: "$15",
+      price: "$12",
       length: "2h 17m",
       rating: "9.3/10",
-      genres: ["Drama", "Crime", "Thriller"]
+      genres: ["Drama", " Crime", " Thriller"],
+      format: "Standard HD"
     }, {
       theater: 4,
       title: "Anatomy Of A Murder",
@@ -111,10 +98,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp11.jpg",
       frequency: "Daily Showings",
       showtimes: ["11:30 A.M.", "5:00 P.M.", "8:00 P.M."],
-      price: "$15",
+      price: "$10",
       length: "2h 41m",
       rating: "9.1/10",
-      genres: ["Crime", "Drama", "Law", "Mystery", "Thriller"]
+      genres: ["Crime", " Drama", " Law", " Mystery"],
+      format: "B/W"
     }, {
       title: "Casablanca",
       theater: 5,
@@ -123,10 +111,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp1.jpg",
       frequency: "Daily Showings",
       showtimes: ["10:00 A.M.", "2:00 P.M.", "6:00 P.M."],
-      price: "$15",
+      price: "$10",
       length: "1hr 42m",
       rating: "9.5/10",
-      genres: ["Drama", "Romance", "War"]
+      genres: ["Drama", " Romance", " War"],
+      format: "B/W"
     }, {
       theater: 6,
       title: "One Flew Over The Cuckoo's Nest",
@@ -135,10 +124,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp2.jpg",
       frequency: "Daily Showings",
       showtimes: ["10:15 A.M.", "2:30 P.M.", "6:15 P.M."],
-      price: "$15",
+      price: "$12",
       length: "2h 14m",
       rating: "9.6/10",
-      genres: ["Drama", "Psychological", "Tragedy"]
+      genres: ["Drama", " Psychological", " Tragedy"],
+      format: "Standard HD"
     }, {
       theater: 7,
       title: "The Circus",
@@ -147,10 +137,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp9.jpg",
       frequency: "Daily Showings",
       showtimes: ["12:00 P.M.", "6:00 P.M.", "9:00 P.M."],
-      price: "$15",
+      price: "$10",
       length: "1hr 12m",
       rating: "9.4/10",
-      genres: ["Comedy", "Drama", "Romance", "Silent"]
+      genres: ["Comedy", " Romance", " Silent"],
+      format: "B/W"
     }, {
       theater: 8,
       title: "The Godfather",
@@ -159,10 +150,11 @@ const movieDetails = function(req, res) {
       poster: "/images/mp5.jpg",
       frequency: "Daily Showings",
       showtimes: ["11:00 A.M.", "4:00 P.M.", "7:30 P.M."],
-      price: "$15",
+      price: "$12",
       length: "2h 58m",
       rating: "9.7/10",
-      genres: ["Drama", "Crime", "Gangster"]
+      genres: ["Crime", " Drama", " Gangster"],
+      format: "Standard HD"
     }]
   });
 };

@@ -10,57 +10,61 @@ block content
     br
     br
   each movie in movies 
-    .container.bg-dark
+    .container
+      br
       .row.py-3
-        h1.pl-3.af-header-font= movie.title
+        h2.af-header-font.mx-auto= movie.title
       .row
-        .col-12.col-md-8
-          img.img-fluid.border.border-dark.mx-auto.d-block(width="25%", height="50%", src= movie.poster)
-      .row.bg-light
-        .col-12.col-md-8.bg-success
-          .card-body.mr-auto.bg-warning
+        .col-12.col-md-12
+          img.img-fluid.border.border-dark.mx-auto.d-block(width="25%", src= movie.poster)
+          .card-body
             form(name="details", action="", method="get")
-              .row
-                .form-group.col-sml-6.pr-5
-                  label.col-form-label(for="showtime") #{movie.frequency} in AF-Theater #{movie.theaterNum}
-              .row.pt-4.pr-5.pl-3.bg-danger
-                table.table.table-striped.table-dark
-                  thead 
-                    tr
-                      th(scope="col") Title
-                      th(scope="col") Year
-                      th(scope="col") Length
-                      th(scope="col") Rating 
-                      th(scope="col") Genres 
-                      th(scope="col") Select
-                  tbody
-                    tr
-                      td= movie.title
-                      td= movie.year 
-                      td= movie.length 
-                      td= movie.rating 
-                      td= movie.genres
-                      td
-                        input#select-movie(type="radio", name="select-movie", value="")
-              br
-              .row 
-                .col-12
-                  .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-                    p= movie.summary
-                    //h3.card-title-text.text-warning.text-center what could go here?
-                    .btn-group.mr-2(role="group", aria-label="First Showtime")
-                      a.btn-link(href="/movies/reserve")
-                        button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
-                    .btn-group.mr-2(role="group", aria-label="Second Showtime")
-                      a.btn-link(href="/movies/reserve")
-                        button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
-                    .btn-group.mr-2(role="group", aria-label="Third Showtime")
-                      a.btn-link(href="/movies/reserve")
-                        button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
-                  button.btn.btn-success.float-right(type="submit") Next
-        
-        br
-        br
+              //.row.pt-4.pr-5.pl-3.bg-warning
+                //.form-group.col-sm-6.pr-5
+                  //label.col-form-label.text-primary(for="sd") Showtime Date: 
+                  //input#show-date.form-control(type="date", name="show-date", min="2017-12-01", max="2017-12-31")
+                //.row.pt-4.pr-5.pl-3.bg-warning
+              table.table.table-striped.table-dark.table-responsive
+                thead.thead-inverse
+                  tr
+                    th(scope="col") Title
+                    th(scope="col") Year
+                    th(scope="col") Length
+                    th(scope="col") Rating 
+                    th(scope="col") Genres
+                    th(scope="col") Format
+                    th(scope="col") Price
+                    //th(scope="col") Select
+                tbody
+                  tr
+                    td.af-table-text= movie.title
+                    td.af-table-text= movie.year 
+                    td.af-table-text= movie.length 
+                    td.af-table-text= movie.rating 
+                    td.af-table-text= movie.genres
+                    td.af-table-text= movie.format 
+                    td.af-table-text= movie.price
+    .row.bg-light
+      .col-12.col-md-12
+        .card-body
+        .row.pl-5.pr-5 
+          .col-12.col-md-
+            .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+              p.text-justify= movie.summary
+              //h3.card-title-text.text-warning.text-center what could go here?
+              p.text-primary #{movie.frequency} in AF-Theater ##{movie.theater}:
+              .btn-group.mr-2(role="group", aria-label="First Showtime")
+                a.btn-link(href="/movies/reserve")
+                  button.btn.btn-outline-dark.text-success(type="button")= movie.showtimes[0]
+              .btn-group.mr-2(role="group", aria-label="Second Showtime")
+                a.btn-link(href="/movies/reserve")
+                  button.btn.btn-outline-dark.text-success(type="button")= movie.showtimes[1]
+              .btn-group.mr-2(role="group", aria-label="Third Showtime")
+                a.btn-link(href="/movies/reserve")
+                  button.btn.btn-outline-dark.text-success(type="button")= movie.showtimes[2]
+                  //button.btn.btn-success.float-right(type="submit") Next
+        //br
+    br                
 //-                    
     each movie in movies
       img.img-fluid.mr-auto.d-block.border.border-dark(width="25%", src= movie.poster)
