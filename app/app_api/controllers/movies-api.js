@@ -35,7 +35,7 @@ const moviesReadOne = function(req, res) {
         }
         res
           .status(200)
-          .json(movie);
+          .json(movie)
       });
   }
   else {

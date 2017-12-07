@@ -11,14 +11,14 @@ const moviesAPIController = require('../controllers/movies-api');
 
 // Defining API Routes and setting up the Controllers (Lab 11 Task 3 Part 1)
 
-/* -- movie details-- */
+/* -- movie-list page-- */
 router
-  .route('/movies')
+  .route('/movies') // List all movies
   .get(moviesAPIController.moviesList);
 
 router
   .route('/movies/:id') // This calls router.route() and passes in the path you want to apply HTTP verbs to
-  .get(moviesAPIController.moviesReadOne); // List all movies by title
+  .get(moviesAPIController.moviesReadOne); // List all movies by id
 
   //.post(moviesAPIController.moviesCreate) // Create a new movie (ADMIN - not implementing right now)
   //.delete(moviesAPIController.moviesDelete); // Delete a movie (ADMIN - not implementing right now)

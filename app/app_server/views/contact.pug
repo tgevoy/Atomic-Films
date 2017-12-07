@@ -1,26 +1,26 @@
 extends layout
 
 block content
-  section.jumbotron.text-center
+  section.jumbotron.text-center.bg-dark
     .container
-      h1.jumbotron-heading-text= pageTitle
+      h1.jumbotron-heading-text.text-light= pageTitle
       br
-      p.lead.text-white.text-justify= pageHeader.message
+      p.lead.text-white.text-justify.text-light= pageHeader.message
     br
     .card
-      .card-body.bg-dark
+      .card-body.bg-light
         //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
         form(name="contact", action="/thanks", method="post")
           .form-group.row
-            label.col-form-label.col-sm-2.text-white(for="email") Email:
+            label.col-form-label.col-sm-2.text-dark(for="email") Email:
             .col-md-6
               input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
           .form-group.row
-            label.col-form-label.col-sm-2.text-white(for="name") Name:
+            label.col-form-label.col-sm-2.text-dark(for="name") Name:
             .col-md-6
               input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
           .form-group.row
-            label.col-form-label.col-sm-2.text-white(for="message") Message:
+            label.col-form-label.col-sm-2.text-dark(for="message") Message:
             .col-md-10
               textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
           .form-group.row
