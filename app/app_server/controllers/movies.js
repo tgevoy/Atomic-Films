@@ -1,10 +1,44 @@
 "use strict";
 
+const request = require('request');
+request.debug = true;
+
+const apiOptions = {
+  server: 'http://localhost:3000/api' // For development in local environment.
+};
+
+if (process.env.NODE_ENV === 'production') {
+  apiOptions.server = 'http://atomic-films.deploy.cs.camosun.bc.ca/api'; // For remotely when pushed to product.
+}
+
 /* The following lines will disconnect the database from the application and attach it to the API */
 const mongoose = require('mongoose');
 const movieModel = mongoose.model('movie');
 
 const movieList = function(req, res) {
+  const reqOptions = {
+    baseUrl: apiOptions.server,
+    url: '/movies',
+    method: 'GET',
+    json: {}
+  };
+
+  request( reqOptions, function(err, apiRes, apiResBody) {
+    // Debugging code - api response body
+    if (err) {
+      console.log("Error occured: " + err);
+    }
+    else if (apiRes.statusCode === 200) {
+      console.log(apiResBody);
+    }
+    else {
+      console.log(apiRes.statusCode);
+    }
+    renderHomePage(req, res, apiResBody);
+  });
+};
+
+const renderHomePage = function(req, res, data) {
   res.render("movie-list", {
     brandName: "Atomic Films",
     pageTitle: "Feature Films",
@@ -12,7 +46,10 @@ const movieList = function(req, res) {
       brandMotto: "...enjoy the classics of yesterday, today!",
       brandMessage: "Our current feature films are some of Hollywood's best and most talked about creations. Select a movie to find out more details."
 		},
-    movies: [{
+    movies: data // This is the new call to the data below for the API
+  });
+};
+    /*movies: [{  // This was the hard-coded data from old build of app.
       title: "12 Angry Men",
       days: ["Daily"],
       details: ["Info"]
@@ -44,9 +81,8 @@ const movieList = function(req, res) {
       title: "The Godfather",
       days: ["Daily"],
       details: ["Info"]
-    }]
-  });
-};
+    }]*/
+
 
 const movieDetails = function(req, res) {
   res.render("movie-details", {
