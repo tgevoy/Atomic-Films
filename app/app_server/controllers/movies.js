@@ -39,7 +39,13 @@ const movieList = function(req, res) {
 };
 
 const renderHomePage = function(req, res, data) {
+  let errorMsg = null;
+  if (!(data instanceof Array)) {
+    errorMsg = 'API lookup error';
+    data = [];
+  }
   res.render("movie-list", {
+    errorMsg: errorMsg,
     brandName: "Atomic Films",
     pageTitle: "Feature Films",
     pageHeader: {

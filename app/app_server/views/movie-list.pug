@@ -11,6 +11,8 @@ block content
     .row.bg-af-card-color
       .col-12.col-md-8
         br
+        if errorMsg
+          .alert.alert-danger= errorMsg
         each movie in movies
           .card.mt-2
             .card-body.bg-light
