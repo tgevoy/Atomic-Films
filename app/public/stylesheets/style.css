@@ -18,9 +18,10 @@ body {
 
 /* Atomic Films motto font */
 
-.af-motto-font p {
+p.af-motto-font {
   font-family: 'Anton', sans-serif;
-  font-size: 10px;
+  font-size: 16px;
+  color: #fff;
 }
 
 /* --------------- layout.pug CSS -------------- */
@@ -66,21 +67,18 @@ i.fa-film {
 }
 
 .bg-af-card-color {
-  background-color: #4EA288;
+  background-color: #000;
+  /*#4EA288;*/
 }
 
 /* --------------- movie-details.pug CSS -------------- */
 
 p.lead {
-  color: firebrick;
+  color: #1b5e20;
   font-size: 1.5rem;
 }
 
 p.card-text {
   color: #fff;
   font-size: 1.5rem;
-}
-
-#movieCard {
-  background-color: #000;
 }

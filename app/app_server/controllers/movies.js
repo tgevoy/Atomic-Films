@@ -1,5 +1,9 @@
 "use strict";
 
+/* The following lines will disconnect the database from the application and attach it to the API */
+const mongoose = require('mongoose');
+const movieModel = mongoose.model('movie');
+
 const movieList = function(req, res) {
   res.render("movie-list", {
     brandName: "Atomic Films",
