@@ -16,6 +16,11 @@ body {
   color: #000;
 }
 
+.af-pageTitle-font {
+  font-family: 'Barlow', sans-serif;
+  color: goldenrod;
+}
+
 /* Atomic Films motto font */
 
 p.af-motto-font {

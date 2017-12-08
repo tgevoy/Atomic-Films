@@ -50,10 +50,10 @@ const movieSchema = new mongoose.Schema({
     type: String
   },
   days: {
-    [String]
+    type: [String]
   },
   details: {
-    [String]
+    type: [String]
   }
 });
 

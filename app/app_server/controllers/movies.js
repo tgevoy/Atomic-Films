@@ -50,7 +50,7 @@ const renderHomePage = function(req, res, data) {
     pageTitle: "Feature Films",
     pageHeader: {
       brandMotto: "...enjoy the classics of yesterday, today!",
-      brandMessage: "Our current feature films are some of Hollywood's best and most talked about creations. Select a movie to find out more details."
+      brandMessage: "Our current feature films are some of Hollywood's best and most talked about creations. Select a movie to find out more details, you won't be disappointed! Our screens are state of the art with the most current advances in technology, including: Digital Projection, REAL-D 3D, and vintage 35mm films for all your viewing needs. Combined with the precision sound of Dolby UltraAVX, you'll be feeling as if you're right along side your favourite actor in that intense action scene."
 		},
     movies: data // This is the new call to the data below for the API
   });
@@ -121,10 +121,10 @@ const renderDetailsPage = function(req, res, data) {
   res.render("movie-details", {
     errorMsg: errorMsg,
     brandName: "Atomic Films",
-    pageTitle: "Feature Films",
+    pageTitle: "Movie Synopsis & Details",
     pageHeader: {
       brandMotto: "...enjoy the classics of yesterday, today!",
-      message: "Our current feature films are some of Hollywood's best and most talked about creations. Select a movie to find out more details."
+      message: "Excellent choice! Checkout the details and current movie showtimes below."
 		},
     movie: data
   });

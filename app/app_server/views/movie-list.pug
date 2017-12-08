@@ -7,7 +7,7 @@ block content
   
     .row
       //h3.pl-3 Choose a movie:
-      h1.pl-3.af-header-font= pageTitle
+      h1.pl-3.af-header-font.af-pageTitle-font.text-center= pageTitle
     .row.bg-af-card-color
       .col-12.col-md-8
         br
@@ -21,7 +21,7 @@ block content
               a.card-link.btn.btn-success.float-right(href=`/movies/${movie._id}`)= movie.details
           br
       .col-12.col-md-4
-        p.lead.pl-4.pt-5.af-header-font.af-sb-color= pageHeader.brandMessage
+        p.lead.pl-4.pt-5.af-header-font.text-primary= pageHeader.brandMessage
         br
   br
   br        
