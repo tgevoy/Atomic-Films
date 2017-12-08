@@ -7,60 +7,61 @@ block content
       h1.jumbotron-heading-text.text-light= pageTitle
       br
       p.lead.text-justify= pageHeader.message
-  each movie in movies 
-    .container
-      br
-      .row.py-3
-        h2.af-header-font.mx-auto= movie.title
-      .row
-        .col-12.col-md-12
-          img.img-fluid.border.border-dark.mx-auto.d-block(width="25%", src= movie.poster)
-          .card-body
-            form(name="details", action="", method="get")
+  if errorMsg
+    .alert.alert-danger= errorMsg
+  .container
+    br
+    .row.py-3
+      h2.af-header-font.mx-auto= movie.title
+    .row
+      .col-12.col-md-12
+        img.img-fluid.border.border-dark.mx-auto.d-block(width="25%", src= movie.poster)
+        .card-body
+          form(name="details", action="", method="get")
+            //.row.pt-4.pr-5.pl-3.bg-warning
+              //.form-group.col-sm-6.pr-5
+                //label.col-form-label.text-primary(for="sd") Showtime Date: 
+                //input#show-date.form-control(type="date", name="show-date", min="2017-12-01", max="2017-12-31")
               //.row.pt-4.pr-5.pl-3.bg-warning
-                //.form-group.col-sm-6.pr-5
-                  //label.col-form-label.text-primary(for="sd") Showtime Date: 
-                  //input#show-date.form-control(type="date", name="show-date", min="2017-12-01", max="2017-12-31")
-                //.row.pt-4.pr-5.pl-3.bg-warning
-              table.table.table-striped.table-dark.table-responsive
-                thead.thead-inverse
-                  tr
-                    th(scope="col") Title
-                    th(scope="col") Year
-                    th(scope="col") Length
-                    th(scope="col") Rating 
-                    th(scope="col") Genres
-                    th(scope="col") Format
-                    th(scope="col") Price
-                    //th(scope="col") Select
-                tbody
-                  tr
-                    td.af-table-text= movie.title
-                    td.af-table-text= movie.year 
-                    td.af-table-text= movie.length 
-                    td.af-table-text= movie.rating 
-                    td.af-table-text= movie.genres
-                    td.af-table-text= movie.format 
-                    td.af-table-text= movie.price
-      .row.bg-dark
-        .col-12.col-md-12
-          //.row.pl-5.pr-5.bg-warning 
-          .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
-            p.lead Synopsis:
-            p.text-justify.text-light= movie.summary
-            //h3.card-title-text.text-warning.text-center what could go here?
-            p.lead #{movie.frequency} in AF-Theater ##{movie.theater}:
-            .btn-group.mr-2(role="group", aria-label="First Showtime")
-              a.btn-link(href="/movies/reserve")
-                button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
-            .btn-group.mr-2(role="group", aria-label="Second Showtime")
-              a.btn-link(href="/movies/reserve")
-                button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
-            .btn-group.mr-2(role="group", aria-label="Third Showtime")
-              a.btn-link(href="/movies/reserve")
-                button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
-                //button.btn.btn-success.float-right(type="submit") Next
-          br
+            table.table.table-striped.table-dark.table-responsive
+              thead.thead-inverse
+                tr
+                  th(scope="col") Title
+                  th(scope="col") Year
+                  th(scope="col") Length
+                  th(scope="col") Rating 
+                  th(scope="col") Genres
+                  th(scope="col") Format
+                  th(scope="col") Price
+                  //th(scope="col") Select
+              tbody
+                tr
+                  td.af-table-text= movie.title
+                  td.af-table-text= movie.year 
+                  td.af-table-text= movie.length 
+                  td.af-table-text= movie.rating 
+                  td.af-table-text= movie.genres
+                  td.af-table-text= movie.format 
+                  td.af-table-text= movie.price
+    .row.bg-dark
+      .col-12.col-md-12
+        //.row.pl-5.pr-5.bg-warning 
+        .btn-toolbar-justify-content-center(role="toolbar", aria-label="Show Times Toolbar")
+          p.lead Synopsis:
+          p.text-justify.text-light= movie.summary
+          //h3.card-title-text.text-warning.text-center what could go here?
+          p.lead #{movie.frequency} in AF-Theater ##{movie.theater}:
+          .btn-group.mr-2(role="group", aria-label="First Showtime")
+            a.btn-link(href="/movies/reserve")
+              button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[0]
+          .btn-group.mr-2(role="group", aria-label="Second Showtime")
+            a.btn-link(href="/movies/reserve")
+              button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[1]
+          .btn-group.mr-2(role="group", aria-label="Third Showtime")
+            a.btn-link(href="/movies/reserve")
+              button.btn.btn-outline-light.text-success(type="button")= movie.showtimes[2]
+              //button.btn.btn-success.float-right(type="submit") Next
+        
           //br
     
                   

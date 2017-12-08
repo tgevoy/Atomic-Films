@@ -18,7 +18,7 @@ block content
             .card-body.bg-light
               h4.card-title.text-primary= movie.title
               h6.card-subtitle.text-muted.pt-1= movie.days 
-              a.card-link.btn.btn-success.float-right(href='/movies')= movie.details
+              a.card-link.btn.btn-success.float-right(href=`/movies/${movie._id}`)= movie.details
           br
       .col-12.col-md-4
         p.lead.pl-4.pt-5.af-header-font.af-sb-color= pageHeader.brandMessage

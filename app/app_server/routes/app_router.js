@@ -8,19 +8,21 @@ const othersController = require("../controllers/others");
 /* ---------------- Movie Pages -------------------- */
 
 /* GET home page. */
-router.get("/", moviesController.movieList);
-
-/* GET the movie details page */
-router.get("/movies", moviesController.movieDetails);
+router.get('/', moviesController.movieList); // List of Movies
 
 /* GET the movie reserveration page */
-router.get("/movies/reserve", moviesController.reserveMovie);
+router.get('/movies/reserve', moviesController.reserveMovie); // Reserve a Movie
+
+/* GET the movie details page */
+router.get('/movies/:movieid', moviesController.movieDetails); // Movie Details
+
+
 
 
 /* ---------------- Other Pages -------------------- */
 
 /* GET contact page */
-router.get("/contact", othersController.contact);
+router.get('/contact', othersController.contact); // Contact Atomic Films
 
 
 

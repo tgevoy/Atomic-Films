@@ -8,12 +8,57 @@ const movieSchema = new mongoose.Schema({
           "Anatomy Of A Murder", "Casablanca", "One Flew Over The Cuckoo's Nest",
           "The Godfather", "The Circus"]
   },
-  days: [String],
-  details: [String]
+  theater: {
+    type: Number,
+    required: true,
+    default: 1,
+    min: 1,
+    max: 9
+  },
+  year: {
+    type: Number,
+    default: 1928,
+    min: 1928,
+    max: 1975
+  },
+  summary: {
+    type: String,
+    required: true
+  },
+  poster: {
+    type: String
+  },
+  showtimes: {
+    type: [String]
+  },
+  frequency: {
+    type: String
+  },
+  genres: {
+    type: [String]
+  },
+  length: {
+    type: String
+  },
+  rating: {
+    type: String
+  },
+  price: {
+    type: String
+  },
+  format: {
+    type: String
+  },
+  days: {
+    [String]
+  },
+  details: {
+    [String]
+  }
 });
 
 mongoose.model('movie', movieSchema);
-
+/*
 const movieShowtimeSchema = new mongoose.Schema({
   theater: {
     type: Number,
@@ -66,3 +111,4 @@ const movieShowtimeSchema = new mongoose.Schema({
 });
 
 mongoose.model('movieShowtime', movieShowtimeSchema);
+*/

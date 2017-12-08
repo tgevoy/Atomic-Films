@@ -3,7 +3,7 @@
 /* The following lines will disconnect the database from the application and attach it to the API */
 const mongoose = require('mongoose');
 const movieModel = mongoose.model('movie');
-//const movieShowtimeModel = mongoose.model('movieShowtime');
+
 
 /* These functions are set in the API Router file (api_router.js) */
 const moviesList = function (req, res) {

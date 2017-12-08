@@ -89,14 +89,47 @@ const renderHomePage = function(req, res, data) {
       details: ["Info"]
     }]*/
 
-
 const movieDetails = function(req, res) {
+  const reqOptions = {
+    baseUrl: apiOptions.server,
+    url: `/movies/${req.params.movieid}`,
+    method: 'GET',
+    json: {}
+  };
+
+  request( reqOptions, function(err, apiRes, apiResBody) {
+    // Debugging code - api response body
+    if (err) {
+      console.log("Error occured: " + err);
+    }
+    else if (apiRes.statusCode === 200) {
+      console.log(apiResBody);
+    }
+    else {
+      console.log(apiRes.statusCode);
+    }
+    renderDetailsPage(req, res, apiResBody);
+  });
+};
+
+const renderDetailsPage = function(req, res, data) {
+  let errorMsg = null;
+  if (!(data instanceof Object)) {
+    errorMsg = 'API lookup error';
+    data = {};
+  }
   res.render("movie-details", {
+    errorMsg: errorMsg,
     brandName: "Atomic Films",
-    pageTitle: "Synopsis & Showtimes",
+    pageTitle: "Feature Films",
     pageHeader: {
-      message: "Never seen that classic movie your friends and family are always talking about? Can't quite remember that exciting plot twist? Look no further! Atomic Films has you covered on all the necessary details, including the stars featured in each movie, the movie's release year, and an exciting synopsis to make you want more."
-    },
+      brandMotto: "...enjoy the classics of yesterday, today!",
+      message: "Our current feature films are some of Hollywood's best and most talked about creations. Select a movie to find out more details."
+		},
+    movie: data
+  });
+};
+    /*
     movies: [{
       theater: 1,
       title: "12 Angry Men",
@@ -202,14 +235,15 @@ const movieDetails = function(req, res) {
       genres: ["Crime", " Drama", " Gangster"],
       format: "Standard HD"
     }]
-  });
-};
+    */
+
 
 const reserveMovie = function(req, res) {
   res.render("reserve-movie", {
     brandName: "Atomic Films",
     pageTitle: "Reserve A Movie",
     pageHeader: {
+      brandMotto: "...enjoy the classics of yesterday, today!",
       message: "Beat the lineups and reserve a ticket and seat ahead of time!"
 	  }
   });
