@@ -244,7 +244,7 @@ const reserveMovie = function(req, res) {
     pageTitle: "Reserve A Movie",
     pageHeader: {
       brandMotto: "...enjoy the classics of yesterday, today!",
-      message: "Beat the lineups and reserve a ticket and seat ahead of time!"
+      message: "Apologies, our reservation system is under construction at the moment. Check back shortly."
 	  }
   });
 };

@@ -7,27 +7,30 @@ block content
     br
     p.lead.text-white.text-justify.text-dark= pageHeader.message
   br
-  .card
-    .card-body.bg-dark
-      //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
-      form(name="contact", action="/thanks", method="post")
-        .form-group.row
-          label.col-form-label.col-sm-2.text-light(for="email") Email:
-          .col-md-6
-            input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
-        .form-group.row
-          label.col-form-label.col-sm-2.text-light(for="name") Name:
-          .col-md-6
-            input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
-        .form-group.row
-          label.col-form-label.col-sm-2.text-light(for="message") Message:
-          .col-md-10
-            textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
-        .form-group.row
-          label.col-form-label.col-sm-2
-          .col-md-6
-            button.btn.btn-info.float-left(type="submit") Send Message
-    br
+  .container
+    .card
+      .card-body.bg-dark
+        .col-12.col-lg-1
+        .col-12.col-lg-11
+          //- WILL NEED TO ADD A /THANKS PAGE TO CONTROLLER IN FUTURE!!!
+          form(name="contact", action="/thanks", method="post")
+            .form-group.row
+              label.col-form-label.col-sm-2.text-light(for="email") Email:
+              .col-md-6
+                input#email.form-control(type="email", name="email", required, placeholder="Enter your email address")
+            .form-group.row
+              label.col-form-label.col-sm-2.text-light(for="name") Name:
+              .col-md-6
+                input#name.form-control(type="text", name="name", required, placeholder="Enter your name")
+            .form-group.row
+              label.col-form-label.col-sm-2.text-light(for="message") Message:
+              .col-md-10
+                textarea#message.form-control(rows="5", name="message", required, placeholder="Type your message")
+            .form-group.row
+              label.col-form-label.col-sm-2
+              .col-md-6
+                button.btn.btn-info.float-left(type="submit") Send Message
+      br
 
 
 

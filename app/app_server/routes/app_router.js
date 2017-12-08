@@ -24,6 +24,8 @@ router.get('/movies/:movieid', moviesController.movieDetails); // Movie Details
 /* GET contact page */
 router.get('/contact', othersController.contact); // Contact Atomic Films
 
+router.post('/thanks', othersController.thanks); // Thanks from Atomic Films
+
 
 
 module.exports = router;

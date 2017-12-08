@@ -11,6 +11,18 @@ const contact = function(req, res) {
   });
 };
 
+const thanks = function(req, res) {
+  res.render("thanks", {
+    brandName: "Atomic Films",
+    pageTitle: "Coming Soon",
+    pageHeader: {
+      brandMotto: "...enjoy the classics of yesterday, today!",
+      message: "Your message is important to us, we are currently working on our feedback system. Check back shortly and thanks for using Atomic Films for your entertainment needs."
+		}
+  });
+};
+
 module.exports = {
-  contact
+  contact,
+  thanks 
 };
